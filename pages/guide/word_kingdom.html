@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진빅박스 - 놀수록 영어가 자란다</title>
+  	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	
+	<!--CSS-->
+	<link rel="stylesheet" href="../../html/css/fonts/type.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+	<link rel="stylesheet" href="../../html/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../html/plugins/animate/animations.css">
+	<link rel="stylesheet" href="../../html/css/hover-min.css">
+	<link rel="stylesheet" href="../../html/plugins/aos/aos.css">
+	<link rel="stylesheet" href="../../html/plugins/swiper/package/css/swiper.min.css">
+	<link href="../../html/plugins/fixed-sticky/fixedsticky.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../html/css/common.css">
+	
+	<!--SCRIPT-->
+	<script src="../../html/js/jquery.min.js"></script>
+	<script src="../../html/js/jquery.form.js"></script>
+	<script src="../../html/js/bootstrap.min.js"></script>
+	<script src="../../html/js/bootbox.min.js"></script>
+
+	<script src="../../html/js/ajax.js"></script>
+	<script src="../../html/js/common.js"></script>
+	
+	<link rel="stylesheet" href="../../html/css/jquery.loadingModal.css">
+	<script src="../../html/js/jquery.loadingModal.min.js"></script>
+
+	<link href="../../html/css/jquery.modal.css" type="text/css" rel="stylesheet" />
+	<link href="../../html/css/jquery.modal.theme-xenon.css" type="text/css" rel="stylesheet" />
+	<link href="../../html/css/jquery.modal.theme-atlant.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../../html/js/jquery.modal.min.js"></script>
+	<script type="text/javascript" src="../../html/js/alert.js"></script>
+	<script type="text/javascript" src="../../html/js/handlebars.js"></script>
+
+	<link rel="stylesheet" href="../../html/css/contents.css">
+</head>
+<body class="idx">
+	<!-- START :: HEADER --> 
+    <header id="header">
+		<!--desktop heade START-->
+		<section class="top-link">
+			<h2 class="hidden">global navigation</h2>
+			<div class="width">
+				<ul class="etc">
+					<!--<li><a href=""><img src="../../html/img/ic_shortcut.png" alt="바로가기"> 바로가기</a></li>-->
+				</ul>
+
+				<ul class="gnb">
+					<li><a href="/pages/member/login.asp">로그인</a></li>
+					<li><a href="/pages/member/join_basic.asp">회원가입</a></li>
+					<!--상시노출-->
+					<li class="start"><a href="#" onclick="goBigbox(); return false;">빅박스 시작하기</a></li>
+					<li class="bigclass"><a href="https://www.bigclassenglish.com/" target="_blank"><img src="../../html/img/btn_bigclass.png" alt="빅클래스 바로가기"></a></li>
+					<li class="realtime"><a href="https://pf.kakao.com/_Yyaxhxl" target="_blank">실시간채팅상담<img src="../../html/img/ic_kakao.png" alt="카카오실시간상담"></a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="hdr">
+			<div class="hdr-wrapper">
+				<h1 class="hdr-logo"><a href="/pages/index/index.asp">웅진빅박스</a></h1>
+				<nav class="navigation">
+					<div class="nav-wrapper">
+						<div class="character"><img src="../../html/img/character.png" alt="웅진빅박스"></div>
+						<ul class="depth">
+							<li><a href="/pages/intro/index.asp" class="depth1">웅진빅박스란?</a></li>
+							<li><a href="/pages/guide/word_kingdom.asp" class="depth1">사용설명서</a>
+								<div class="depth2">
+									<!--<a href="#">빅박스 한눈에 보기</a>-->
+									<a href="/pages/guide/bigbox_tv.asp" class="new">빅박스TV</a>
+									<a href="/pages/guide/word_kingdom.asp">워드킹덤</a>
+									<a href="/pages/guide/readingoceans.asp">리딩오션스</a>
+									<a href="/pages/guide/forest_of_expression.asp">표현의 숲</a>
+								</div>
+							</li>
+							<li><a href="/pages/order/index.asp" class="depth1">학습신청</a></li>
+							<li class="focus-color"><a href="/pages/customer/notice.asp" class="depth1">고객센터</a>
+								<div class="depth2">
+									<a href="/pages/customer/notice.asp">공지사항</a>
+									<a href="/download/bigbox_guide_ko_new.pdf" target="_blank">학습 가이드</a>
+									<a href="/pages/customer/faq.asp">자주 묻는 질문</a>
+									<a href="/pages/customer/qna.asp">1:1 문의</a>
+								</div>
+							</li>
+							<li class="hdr-btn use"><label for="regApass">이용권 등록</label></li>
+							<li class="hdr-btn report"><a href="/pages/mypage/myreport.asp">학습 리포트</a></li>
+						</ul>
+
+						<ul class="download-btns">
+							<li class="free-down">
+								<a href="#" onclick="getInstaller(); return false;" class="">빅박스 무료 다운로드</a>
+							</li>
+							<li class="guide-down">
+								<a href="/download/bigbox_guide_ko_new.pdf" target="_blank">학습 가이드 다운로드</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!--desktop heade END-->
+
+				<!--Tablet mobile nav START-->
+				<div class="openbtn" onclick="openNav()">
+					<div><i class="fas fa-bars"><span>open</span></i></div>
+				</div>
+				<nav id="SideNav" class="side-nav">
+					<div class="item closebtn" onclick="closeNav()">
+						<div><i class="fas fa-times"><span>close</span></i></div>
+					</div>
+
+					<div class="item gnb">
+						<ul>
+							<!--로그인 전-->
+							<li><a href="/pages/member/login.asp">로그인</a></li>
+							<li><a href="/pages/member/join_basic.asp">회원가입</a></li>
+						</ul>
+						<!--상시노출-->
+						<ul>
+							<li class="start"><a href="#" onclick="goBigbox(); return false;">빅박스 시작하기</a></li>
+							<li class="realtime"><a href="https://pf.kakao.com/_Yyaxhxl" target="_blank">실시간채팅상담<img src="../../html/img/ic_kakao.png" alt="카카오실시간상담"></a></li>
+						</ul>
+					</div>
+
+					<ul class="item navi">
+						<li>
+							<h3 class="depth1-item"><a href="/pages/intro/index.asp"><span>웅진빅박스란?</span></a></h3>
+						</li>
+						<li>
+							<h3 class="accor-nav-title depth1-item"><span>사용설명서<i class="fas fa-plus"></i></span></h3>
+							<div class="accor-nav-content depth2-items">
+								<!--<a href="">빅박스 한눈에 보기</a>-->
+								<a href="/pages/guide/bigbox_tv.asp" >빅박스TV</a>
+								<a href="/pages/guide/word_kingdom.asp">워드킹덤</a>
+								<a href="/pages/guide/readingoceans.asp">리딩오션스</a>
+								<a href="/pages/guide/forest_of_expression.asp">표현의 숲</a>
+							</div>
+						</li>
+						<li>
+							<h3 class="depth1-item"><a href="/pages/order/index.asp"><span>학습신청</span></a></h3>
+						</li>
+						<li>
+							<h3 class="accor-nav-title depth1-item"><span>고객센터<i class="fas fa-plus"></i></span></h3>
+							<div class="accor-nav-content depth2-items">
+								<a href="/pages/customer/notice.asp">공지사항</a>
+								<a href="/download/bigbox_guide_ko_new.pdf" target="_blank">학습 가이드</a>
+								<a href="/pages/customer/faq.asp">자주 묻는 질문</a>
+								<a href="/pages/customer/qna.asp">1:1 문의</a>
+							</div>
+						</li>
+					</ul>
+					<div class="item btns">
+						<label class="hdr-btn use" for="regApass">이용권 등록/label>
+						<a href="/pages/mypage/myreport.asp" class="hdr-btn report">학습 리포트</a>
+					</div>
+					<div class="item">
+						<a href="https://forms.gle/m97pqri2zpR9kfv58" class="btn_link btn_teacher" target="_blank"><img src="../../html/img/m_btn_teacher.png">웅진컴퍼스 파트너 선생님 신청</a>
+						<a href="https://www.bigclassenglish.com/" class="btn_link btn_bigclass" target="_blank"><img src="../../html/img/m_btn_bigclass.png">웅진빅클래스 바로가기</a>
+					</div>
+				</nav><!--//mobile nav END-->
+			</div>
+		</section>
+	</header>
+	<!-- END :: HEADER --> 
+	<main>
+		<!--bread crumb START-->
+		<div class="bread-crumb bothside-space">
+			<ul class="width">
+				<li class="home">home</li>
+				<li class="dep1">사용설명서</li>
+				<li class="dep2">워드킹덤</li>
+			</ul>
+		</div>
+		<!--bread crumb END-->
+
+		<!--contents START-->
+		<article class="manual wordkingdom">
+			<header class="contents-header common width bothside-space">
+				<h3 class="contents-ttl" data-aos="fade-in">워드킹덤</h3>
+				<div class="contents-desc">
+					<p class="leeead">
+						웅진빅박스는 영어 공부하는 게 아니에요! 영어랑 같이 노는 것!<br>
+						놀다 보면 어느새 3000단어 마스터!</p>
+				</div>
+				<img src="../../html/img/wordkingdom/header_info_img.png" alt="Monty's WordKingdom" data-aos="fade-up">
+			</header>
+
+			<section class="sequence">
+				<h4 class="hidden">워드킹덤 수업 방법</h4>
+				<ul class="width bothside-space">
+					<li class="item item1">
+						<div>
+							<p class="ttl"><em>영상을 보기만 해도</em><br>
+								<strong>필수 영어단어 카드 획득!</strong></p>
+							<div class="tag"><span>#3000단어</span><br>
+							<span>#흥미도 100점</span><span>#영어회화 90%가능</span></div>
+						</div>
+					</li>
+					<li class="item item2">
+						<div>
+							<p class="ttl"><em>획득한 단어로<br>
+								게임을 할수록</em><br>
+								<strong>나의 카드 레벨이 올라가요</strong></p>
+							<div class="tag"><span>#반복학습 할수록</span><br>
+							<span>#영어단어 완전 암기</span></div>
+						</div>
+					</li>
+					<li class="item item3">
+						<div>
+							<p class="ttl"><em>다양한 “워드 게임”으로</em><br>
+								<strong>배운 단어를 복습한다</strong></p>
+							<div class="tag"><span>#3000단어</span><br>
+							<span>#흥미도 100점</span><span>#영어회화 90%가능</span></div>
+						</div>
+					</li>
+					<li class="item item4">
+						<div>
+							<p class='ttl'><em>영상시청부터 퀴즈쇼까지!<br>
+                			모든 퀘스트 완료하고<br>
+                			골드로 보상받으며 단어를 외우며</em><br>
+							<strong>영어에 대한 자신감과 성취감을 얻어요!​</strong></p>
+							<div class='tag'><span>#골드보상 #워드매치 #퀴즈쇼 #목표달성​</span></div>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section class="how-to-learn bothside-space">
+				<div class="dashed-border width">
+					<div class="item-container">
+						<h4 class="item-ttl round"><em data-aos="fade-up"><span class="q-circle">Q</span> 아이가 영어 단어를 잊어버리지 않나요?</em></h4>
+						<p class="txt-item"><span class="a-circle">A</span> 웅진빅박스의 영어 습득법이라면 잊어버리지 않아요!</p>
+						<ul class="list-item">
+							<li><div><em>아이가 좋아하는</em>
+								<span>영상으로 단어 획득</span></div></li>
+							<li><div><em>단어 읽기로<br> 획득 단어 카드</em>
+								<span>레벨업</span></div></li>
+							<li><div><em>단어게임으로</em>
+								<span>획득 단어 복습</span></div></li>
+							<li><div><em>잊어버린 단어는</em>
+								<span>게임을 통해<br> 다시 획득</span></div></li>
+							<li><div><em>3,000단어</em>
+								<span>완벽 암기</span></div></li>
+						</ul>
+					</div>
+				</div>
+				<figure class="graph-item">
+					<img src="../../html/img/wordkingdom/graph.png" alt="graph">
+					<figcaption>에빙하우스 망각 곡선 변형</figcaption>
+				</figure>
+			</section>
+		</article>
+		<!--contents END-->
+	</main>
+
+	<!-- START :: FOOTER --> 
+	<a href="#top" class="tothe-top">TOP</a>
+	<footer id="footer">
+		<section class="tail-link bothside-space">
+			<h5 class="hidden">footer link</h5>
+			<div class="wrapper width">
+				<ul class="in-link">
+					<li><a href="/pages/intro/index.asp" >빅박스</a></li>
+					<li><a href="/pages/customer/notice.asp">고객센터</a></li>
+					<li><a href="/pages/member/privacy.asp">개인정보 처리방침</a></li>
+					<li><a href="/pages/member/terms.asp">이용약관</a></li>
+					<li><a href="https://www.wjcompass.com/new_kor/company/about.asp" target="_blank">회사소개</a></li>
+					<li><a href="/pages/customer/inquiry.asp">컨텐츠 제휴문의</a></li>
+				</ul>
+
+				<div class="besides-link">
+					<ul class="sns-link">
+						<li><a href="https://bit.ly/3TErPfX" target="_blank"><img src="../../html/img/ic_facebook.png" ></a></li>
+						<li><a href="https://bit.ly/3htn6Ar" target="_blank"><img src="../../html/img/ic_instagram.png"></a></li>
+						<li><a href="https://bit.ly/3Ty9tNR" target="_blank"><img src="../../html/img/ic_youtube.png"></a></li>
+						<li><a href="https://bit.ly/3Eutj8n" target="_blank"><img src="../../html/img/ic_blog.png"></a></li>
+					</ul>
+
+					<dl class="related-link select-drdn">
+						<dt class="select-drdn-current"><span >제휴 사이트 바로가기</span></dt>
+						<dd class="select-drdn-wrapper">
+							<ul class="select-drdn-items">
+								<li><a href="https://www.wjcompass.com/" target="_blank">웅진컴퍼스</a></li>
+								<li><a href="https://www.bigclassenglish.com/" target="_blank">빅클래스</a></li>
+							</ul>
+						</dd>	
+					</dl>
+				</div>
+			</div>
+		</section>
+
+	  <section class="tail-info width bothside-space">
+			<h5 class="hidden">information</h5>
+	    <div class="info-item info">
+				<address><span>(주)웅진컴퍼스</span> <span>대표 :  김홍석</span> <span>사업자등록번호 : 214-87-35792</span> <span>통신판매업 : 제 2005-서울서초-05631호</span><br>
+				<span>주소 : 서울시 서초구 강남대로 39길 15-10 한라비발디스튜디오 193, 3층</span> <span>개인정보책임자 : 최정구부장</span><br>
+				<span>고객문의: 1544-0230</span> <span>E-mail : bigbox@wjcompass.com</span></address>
+				<p class="copyright">ⓒ playbigbox all rights reserved.</p>
+	    </div>
+
+	    <ul class="info-item ctf-mark" >
+				<li><img data-i18n="../../html/img/certi_mark1.png"></li>
+	    </ul>
+	  </section>
+	</footer>
+	<!-- END :: FOOTER --> 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  	<script src="../../html/js/default.js"></script>
+	<script src="../../html/plugins/aos/aos.js"></script>
+	<script>
+		AOS.init({
+			easing: 'ease-in-out-sine'
+		});
+	</script>
+</body>
+</html>
