@@ -171,6 +171,7 @@
 @media screen and (max-width: 640px){
 	.tab_block{display:inline-block}
 	.mo_block{display:block}
+	.section1{background:#894530 url('../../html/img/wordkingdom/bg_section1_mo.png') no-repeat 50% 0 / 100% auto}
 	.section1 h4{max-width:266px}
 	.section1 .visual_slide{/*width:91.6%;*/width:100%;padding:0 4.2% 7px;background-size:100% auto;background-position:50% 150%}
 	.section1 .visual_slide:before{left:0;width:42px;height:56px}
@@ -212,6 +213,7 @@
 	.section3 .sub_tit{font-size:14px}
 	.section3 .main_tit{font-size:18px}
 	.section3 .main_tit strong{padding:0 7px;line-height:25px;font-size:20px}
+	.section3 .main_tit strong:nth-child(2){margin:0;line-height:26px}
 	.section3 .tab li{height:42px}
 	.section3 .tab li a{font-size:14px;line-height:1.2}
 	.section3 .tit{height:38px;font-size:18px}
@@ -238,7 +240,7 @@
 	.quick_banner{right:15px;bottom:130px}
 
 	.pop_wrap{max-width:340px;padding-top:30px;}
-	.pop_wrap .btn_close{width:52px;height:auto;}
+	.pop_wrap .btn_close{width:52px;height:20px;}
 	.pop_intro .swiper-button-prev,
 	.pop_intro .swiper-button-next{width:40px;height:40px;}
 }
