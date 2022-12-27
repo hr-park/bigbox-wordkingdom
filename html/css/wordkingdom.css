@@ -232,7 +232,7 @@
 	.section3 .img_grm .swiper-container{height:529px}
 	/*.section3 .img_grm .swiper-slide{height:auto !important;}*/
 	.section3 .img_grm img{max-width:310px;margin:0 auto}
-	.section4{padding:33px 0 25px}
+	.section4{padding:33px 0 25px;background:#5F2D2B url('../../html/img/wordkingdom/bg_section4_mo.png') no-repeat 50% 0 / 100% auto}
 	.section4 div{max-width:312px;margin:0 auto}
 	.section4 img{max-width:312px}
 	.section4 .btn_down{left:0;width:100%;margin-left:0;}
