@@ -18,7 +18,7 @@
 .wordkingdom .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active{background:url('../../html/img/wordkingdom/ico_pagination_on.png') no-repeat 50% 50% / 10px auto;}
 .quick_banner{position:fixed;right:45px;bottom:110px;z-index:100;width:143px;}
 
-.section1{/*height:875px;*/padding:35px 0 0;text-align:center;background:url('../../html/img/wordkingdom/bg_section1.png') no-repeat 50% 50%;box-sizing:border-box;}
+.section1{/*height:875px;*/padding:35px 0 0;text-align:center;background:#35a0e6 url('../../html/img/wordkingdom/bg_section1.png') no-repeat 50% 50%;box-sizing:border-box;}
 .section1 h4{max-width:544px;margin:0 auto}
 .section1 .visual_slide{/*overflow:visible;*/position:relative;/*max-width:758px;*/max-width:858px;padding:0 104px 28px;margin:30px auto 0;background:url('../../html/img/wordkingdom/bg_slide.png') no-repeat left 50% bottom -50% / 85% auto;}
 .section1 .visual_slide:before{content:'';position:absolute;left:90px;bottom:22px;z-index:2;width:88px;height:116px;background:url('../../html/img/wordkingdom/bg_slide_left.png') no-repeat 50% 50% / 100% auto;transform:rotate(-28deg)}
