@@ -59,6 +59,9 @@ $(function(){
 			
 
 	var tab_slide = new Swiper('.tab_slide', {
+		autoplay: {
+		  delay: 3000
+		},
 		speed: 1000,
 		arrows: false,
 		pagination: {
