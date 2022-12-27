@@ -91,7 +91,7 @@
 .section3 .main_tit strong.bg_pp{background:#D550E4}
 .section3 .main_tit strong.bg_org{background:#FF513C}
 .section3 .main_tit strong.bg_gr{background:#91CC04}
-.section3 .tab{display:flex;align-items:center;margin:20px 0}
+/*.section3 .tab{display:flex;align-items:center;margin:20px 0}
 .section3 .tab li{width:33.3%;height:76px;border-radius:20px 20px 0 0}
 .section3 .tab li.tab_list1{background:#E7A4EE}
 .section3 .tab li.tab_list2{background:#FDC9C2}
@@ -99,7 +99,8 @@
 .section3 .tab li.tab_list1.active{background:#D550E4}
 .section3 .tab li.tab_list2.active{background:#FF513C}
 .section3 .tab li.tab_list3.active{background:#91CC04}
-.section3 .tab li a{display:flex;align-items:center;justify-content:center;height:100%;padding:0 10px;color:#fff;font-size:32px;line-height:1;font-weight:700}
+.section3 .tab li a{display:flex;align-items:center;justify-content:center;height:100%;padding:0 10px;color:#fff;font-size:32px;line-height:1;font-weight:700}*/
+.section3 .img_step{margin:20px 0}
 .section3 .tab_slide{padding-bottom:45px}
 .section3 .flex_box{display:flex;padding:35px 25px 0;justify-content:space-between}
 .section3 .tit{display:flex;align-items:center;justify-content:center;height:74px;color:#333;font-weight:700;font-size:36px;border:1px solid #D550E4;background:#FBEEFC;line-height:normal}
