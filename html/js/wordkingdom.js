@@ -1,5 +1,6 @@
 $(function(){
 	var visual_slide = new Swiper('.visual_slide', {
+		effect : 'fade', 
 		autoplay: {
 			delay: 3000,
 		},
