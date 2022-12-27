@@ -83,7 +83,7 @@ $(function(){
 	});
 
 	$('.btn_video_pop').click(function(){
-		$('.pop_video iframe').attr('src','https://www.youtube.com/embed/R43YwEshGCA');
+		$('.pop_video iframe').attr('src','https://www.youtube.com/embed/GbEE6qxG7cs');
 	});
 
 	$('.pop_video .btn_close').click(function(){
