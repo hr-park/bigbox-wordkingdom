@@ -18,7 +18,7 @@ $(function(){
 	});
 
 	var slide_game = new Swiper('.slide_game', {
-		spaceBetween: 52,
+		spaceBetween: 53,
 		speed: 1000,
 		arrows: true,
 		navigation: {
@@ -31,7 +31,7 @@ $(function(){
 	});
 
 	var slide_card = new Swiper('.slide_card', {
-		spaceBetween: 52,
+		spaceBetween: 53,
 		speed: 1000,
 		arrows: true,
 		navigation: {
@@ -62,6 +62,7 @@ $(function(){
 		autoplay: {
 		  delay: 3000
 		},
+		autoplayDisableOnInteraction:false,
 		speed: 1000,
 		arrows: false,
 		pagination: {
