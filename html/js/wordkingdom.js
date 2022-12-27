@@ -5,7 +5,7 @@ $(function(){
 			delay: 3000,
 		},
 		spaceBetween: 104,
-		speed: 1000,
+		//speed: 1000,
 		arrows: true,
 		loop:true,
 		navigation: {
