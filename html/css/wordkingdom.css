@@ -21,12 +21,11 @@
 .quick_banner a{display:block;height:100%;}
 .quick_banner img{position:absolute;left:50%;bottom:0;z-index:1;max-width:819px;transform:translate(-50%, 0)}
 
-.section1{/*height:875px;*/padding:35px 0 0;text-align:center;background:#35a0e6 url('../../html/img/wordkingdom/bg_section1.png') no-repeat 50% 50%;box-sizing:border-box;}
+.section1{padding:35px 0 0;text-align:center;background:#35a0e6 url('../../html/img/wordkingdom/bg_section1.png') no-repeat 50% 50%;box-sizing:border-box;}
 .section1 h4{max-width:544px;margin:0 auto}
-.section1 .visual_slide{/*overflow:visible;*/position:relative;/*max-width:758px;*/max-width:858px;padding:0 104px 28px;margin:30px auto 0;background:url('../../html/img/wordkingdom/bg_slide.png') no-repeat left 50% bottom -50% / 85% auto;}
+.section1 .visual_slide{position:relative;max-width:858px;padding:0 104px 28px;margin:30px auto 0;background:url('../../html/img/wordkingdom/bg_slide.png') no-repeat left 50% bottom -50% / 85% auto;}
 .section1 .visual_slide:before{content:'';position:absolute;left:90px;bottom:22px;z-index:2;width:88px;height:116px;background:url('../../html/img/wordkingdom/bg_slide_left.png') no-repeat 50% 50% / 100% auto;transform:rotate(-28deg)}
 .section1 .visual_slide:after{content:'';position:absolute;right:75px;bottom:15px;z-index:2;width:95px;height:134px;background:url('../../html/img/wordkingdom/bg_slide_right.png') no-repeat 50% 50% / 100% auto;transform:rotate(28deg)}
-/*.section1 .visual_slide .swiper-slide{width:550px}*/
 .section1 .visual_slide .swiper-wrapper{}
 .section1 .swiper-container-horizontal>.swiper-pagination-bullets{bottom:70px;}
 .section1 .visual_slide .swiper-button-prev:after,
@@ -35,7 +34,6 @@
 .section1 .visual_slide .swiper-button-next{right:10px;width:74px;height:74px;background:url('../../html/img/wordkingdom/btn_next_blue.png') no-repeat 50% 50% / 100% auto;box-shadow:0 4px 10px rgb(0 0 0 / 10%);border-radius:50%;}
 .section1 .banner{display:flex;align-items:center;justify-content:center;height:85px;background:#222729;}
 .section1 .banner p{max-width:647px}
-
 
 .section2{padding:60px 0 0;background:#894530 url('../../html/img/wordkingdom/bg_section2.png') no-repeat 50% 0 / 100% 100%}
 .section2 .inner{position:relative;padding-bottom:105px}
@@ -64,9 +62,7 @@
 .section2 ul li .img_box img{max-width:550px}
 .section2 ul li .img_box.swiper-container{padding:0 52px 24px}
 .section2 ul li .img_box.slide_intro{z-index:2}
-.section2 .swiper-wrapper{/*padding:0 75px*/}
 .section2 .swiper-slide{width:550px}
-/*.section2 li.list4 .swiper-slide div{width:550px;*box-shadow:4px 0 4px 0 rgb(0 0 0 / 25%);border-radius:12px;}*/
 .section2 .swiper-container .swiper-btn{opacity:0;width:40px;height:40px;box-shadow:0 4px 4px rgb(0 0 0 / 25%);border-radius:50%;transition:all .2s;}
 .section2 .swiper-container:hover .swiper-btn{opacity:1 !important;}
 .section2 .swiper-container .swiper-btn:after{display:none}
@@ -83,8 +79,6 @@
 .section3 .box.box1{position:relative;padding:50px 0 40px}
 .section3 .box.box1:before{content:'';position:absolute;left:77px;top:-148px;width:184px;height:158px;background:url('../../html/img/wordkingdom/section3_cha1.png') no-repeat 50% 100% / 100% auto}
 .section3 .box.box1:after{content:'';position:absolute;right:94px;top:-165px;width:161px;height:178px;background:url('../../html/img/wordkingdom/section3_cha2.png') no-repeat 50% 100% / 100% auto}
-/*.section3 .box.box3{position:relative;}
-.section3 .box.box3:after{content:'';position:absolute;right:0;bottom:0;z-index:2;width:357px;height:149px;background:url('../../html/img/wordkingdom/bg_box_paper.png') no-repeat 50% 100% / 100% 100%}*/
 .section3 .box .inner{max-width:1040px;margin:0 auto}
 .section3 .box_num{display:inline-block;width:64px;}
 .section3 .sub_tit{margin:10px 0;font-family:'Noto Sans KR';font-size:26px;line-height:1.2;text-decoration:underline}
@@ -94,15 +88,6 @@
 .section3 .main_tit strong.bg_pp{background:#D550E4}
 .section3 .main_tit strong.bg_org{background:#FF513C}
 .section3 .main_tit strong.bg_gr{background:#91CC04}
-/*.section3 .tab{display:flex;align-items:center;margin:20px 0}
-.section3 .tab li{width:33.3%;height:76px;border-radius:20px 20px 0 0}
-.section3 .tab li.tab_list1{background:#E7A4EE}
-.section3 .tab li.tab_list2{background:#FDC9C2}
-.section3 .tab li.tab_list3{background:#DDEFB3}
-.section3 .tab li.tab_list1.active{background:#D550E4}
-.section3 .tab li.tab_list2.active{background:#FF513C}
-.section3 .tab li.tab_list3.active{background:#91CC04}
-.section3 .tab li a{display:flex;align-items:center;justify-content:center;height:100%;padding:0 10px;color:#fff;font-size:32px;line-height:1;font-weight:700}*/
 .section3 .img_step{margin:20px 0 10px}
 .section3 .tab_slide{padding-bottom:45px}
 .section3 .flex_box{display:flex;align-items:center;padding:35px 25px 0;justify-content:space-between}
@@ -145,7 +130,6 @@
 }
 @media screen and (max-width: 1024px){
 	.tab_block{display:block}
-	/*.section1 .visual_slide{background-position:50% 300%;background-size:100% auto}*/
 	.section1 .visual_slide{background-position:left 50% bottom -100%;}
 	.section2 .inner:after{right:0;margin-right:0}
 	.section2 ul li{padding:60px 30px;background-size:auto 100%}
@@ -168,20 +152,17 @@
 	.section3 .img_grm{margin:30px auto 0}
 	.section3 .r_box{width:55%;}
 	.pop_wrap{overflow-y:auto;max-width:80%;max-height:90vh;}
-
-	/*.quick_banner{right:25px;bottom:130px}*/
 }
 @media screen and (max-width: 1080px){
 	.section2 .inner:after{display:none}
 	.section2 ul li .tit{font-size:32px}
-	/*.section1 .visual_slide{background-position:50% 300%;background-size:100% auto}*/
 }
 @media screen and (max-width: 640px){
 	.tab_block{display:inline-block}
 	.mo_block{display:block}
 	.section1{background:#894530 url('../../html/img/wordkingdom/bg_section1_mo.png') no-repeat 50% 0 / 100% auto}
 	.section1 h4{max-width:266px}
-	.section1 .visual_slide{/*width:91.6%;*/width:100%;padding:0 4.2% 7px;background-size:100% auto;background-position:50% 150%}
+	.section1 .visual_slide{width:100%;padding:0 4.2% 7px;background-size:100% auto;background-position:50% 150%}
 	.section1 .visual_slide:before{left:0;width:42px;height:56px}
 	.section1 .visual_slide:after{right:0;width:46px;height:65px}
 	.section1 .visual_slide .swiper-button-prev,
@@ -236,17 +217,14 @@
 	.section3 .tab_slide{padding:0}
 	.section3 .swiper-pagination-bullets{display:none}
 	.section3 .img_graph{max-width:303px;margin:14px auto 0;}
-	/*.section3 .img_grm{margin:0}*/
 	.section3 .img_grm .mo_view{display:block}
 	.section3 .img_grm .pc_view{display:none}
 	.section3 .img_grm .swiper-container{height:529px}
-	/*.section3 .img_grm .swiper-slide{height:auto !important;}*/
 	.section3 .img_grm img{max-width:310px;margin:0 auto}
 	.section4{padding:33px 0 25px;background:#5F2D2B url('../../html/img/wordkingdom/bg_section4_mo.png') no-repeat 50% 0 / 100% auto}
 	.section4 div{max-width:312px;margin:0 auto}
 	.section4 img{max-width:312px}
 	.section4 .btn_down{left:0;width:100%;margin-left:0;}
-
 
 	.quick_banner{left:0;height:62px;border-radius:30px 30px 0 0}
 	.quick_banner img{max-width:324px}
