@@ -99,7 +99,7 @@ $(function(){
 		effect : 'fade', 
 		//direction: 'vertical',
 		autoplay: {
-		  delay: 3000
+		  delay: 2000
 		},
 		//speed: 1000,
 		observer: true,
