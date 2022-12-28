@@ -96,10 +96,11 @@ $(function(){
 	});
 
 	var slide_grm = new Swiper('.slide_grm', {
-		direction: 'vertical',
+		effect : 'fade', 
+		//direction: 'vertical',
 		autoplay: {
-          delay: 3000
-        },
+		  delay: 3000
+		},
 		//speed: 1000,
 		observer: true,
 		observeParents: true,
