@@ -60,7 +60,7 @@ $(function(){
 
 	var tab_slide = new Swiper('.tab_slide', {
 		autoplay: {
-		  delay: 3000
+		  delay: 2000
 		},
 		autoplayDisableOnInteraction:false,
 		speed: 1000,
