@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진빅박스 - 놀수록 영어가 자란다</title>
+  	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	
+	<!--CSS-->
+	<link rel="stylesheet" href="../../html/css/fonts/type.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+	<link rel="stylesheet" href="../../html/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../html/plugins/animate/animations.css">
+	<link rel="stylesheet" href="../../html/css/hover-min.css">
+	<link rel="stylesheet" href="../../html/plugins/aos/aos.css">
+	<link rel="stylesheet" href="../../html/plugins/swiper/package/css/swiper.min.css">
+	<link href="../../html/plugins/fixed-sticky/fixedsticky.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../html/css/common.css">
+	
+	<script src="../../html/js/jquery.min.js"></script>
+	<script src="../../html/js/jquery.form.js"></script>
+	<script src="../../html/js/bootstrap.min.js"></script>
+	<script src="../../html/js/bootbox.min.js"></script>
+
+	<script src="../../html/js/ajax.js"></script>
+	<script src="../../html/js/common.js"></script>
+	
+	<link rel="stylesheet" href="../../html/css/jquery.loadingModal.css">
+	<script src="../../html/js/jquery.loadingModal.min.js"></script>
+
+	<link href="../../html/css/jquery.modal.css" type="text/css" rel="stylesheet" />
+	<link href="../../html/css/jquery.modal.theme-xenon.css" type="text/css" rel="stylesheet" />
+	<link href="../../html/css/jquery.modal.theme-atlant.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../../html/js/jquery.modal.min.js"></script>
+	<script type="text/javascript" src="../../html/js/alert.js"></script>
+	<script type="text/javascript" src="../../html/js/handlebars.js"></script>
+	<link rel="stylesheet" href="../../html/css/contents.css">
+
+	<script src="../../html/plugins/swiper/package/js/swiper.min.js"></script> <!-- 추가 -->
+	<script src="../../html/js/wordkingdom.js"></script> <!-- 신규파일 -->
+	<link rel="stylesheet" href="../../html/css/wordkingdom.css"> <!-- 신규파일 -->
+</head>
+<body class="idx">
+	<!-- START :: HEADER --> 
+    <header id="header">
+		<!--desktop heade START-->
+		<section class="top-link">
+			<h2 class="hidden">global navigation</h2>
+			<div class="width">
+				<ul class="etc">
+					<!--<li><a href=""><img src="../../html/img/ic_shortcut.png" alt="바로가기"> 바로가기</a></li>-->
+				</ul>
+
+				<ul class="gnb">
+					<li><a href="/pages/member/login.asp">로그인</a></li>
+					<li><a href="/pages/member/join_basic.asp">회원가입</a></li>
+					<!--상시노출-->
+					<li class="start"><a href="#" onclick="goBigbox(); return false;">빅박스 시작하기</a></li>
+					<li class="bigclass"><a href="https://www.bigclassenglish.com/" target="_blank"><img src="../../html/img/btn_bigclass.png" alt="빅클래스 바로가기"></a></li>
+					<!--<li class="realtime"><a href="https://pf.kakao.com/_Yyaxhxl" target="_blank">실시간채팅상담<img src="../../html/img/ic_kakao.png" alt="카카오실시간상담"></a></li>-->
+				</ul>
+			</div>
+		</section>
+		<section class="hdr">
+			<div class="hdr-wrapper">
+				<h1 class="hdr-logo"><a href="/pages/index/index.asp">웅진빅박스</a></h1>
+				<nav class="navigation">
+					<div class="nav-wrapper">
+						<div class="character"><img src="../../html/img/character.png" alt="웅진빅박스"></div>
+						<ul class="depth">
+							<li><a href="/pages/intro/index.asp" class="depth1">웅진빅박스란?</a></li>
+							<li><a href="/pages/guide/word_kingdom.asp" class="depth1">사용설명서</a>
+								<div class="depth2">
+									<!--<a href="#">빅박스 한눈에 보기</a>-->
+									<a href="/pages/guide/bigbox_tv.asp" class="new">빅박스TV</a>
+									<a href="/pages/guide/word_kingdom.asp">워드킹덤</a>
+									<a href="/pages/guide/readingoceans.asp">리딩오션스</a>
+									<a href="/pages/guide/forest_of_expression.asp">표현의 숲</a>
+								</div>
+							</li>
+							<li><a href="/pages/order/index.asp" class="depth1">학습신청</a></li>
+							<li class="focus-color"><a href="/pages/customer/notice.asp" class="depth1">고객센터</a>
+								<div class="depth2">
+									<a href="/pages/customer/notice.asp">공지사항</a>
+									<a href="/download/bigbox_guide_ko_new.pdf" target="_blank">학습 가이드</a>
+									<a href="/pages/customer/faq.asp">자주 묻는 질문</a>
+									<a href="/pages/customer/qna.asp">1:1 문의</a>
+								</div>
+							</li>
+							<li class="hdr-btn use"><label for="regApass">이용권 등록</label></li>
+							<li class="hdr-btn report"><a href="/pages/mypage/myreport.asp">학습 리포트</a></li>
+						</ul>
+
+						<ul class="download-btns">
+							<li class="free-down">
+								<a href="#" onclick="getInstaller(); return false;" class="">빅박스 무료 다운로드</a>
+							</li>
+							<li class="guide-down">
+								<a href="/download/bigbox_guide_ko_new.pdf" target="_blank">학습 가이드 다운로드</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!--desktop heade END-->
+
+				<!--Tablet mobile nav START-->
+				<div class="openbtn" onclick="openNav()">
+					<div><i class="fas fa-bars"><span>open</span></i></div>
+				</div>
+				<nav id="SideNav" class="side-nav">
+					<div class="item closebtn" onclick="closeNav()">
+						<div><i class="fas fa-times"><span>close</span></i></div>
+					</div>
+
+					<div class="item gnb">
+						<ul>
+							<!--로그인 전-->
+							<li><a href="/pages/member/login.asp">로그인</a></li>
+							<li><a href="/pages/member/join_basic.asp">회원가입</a></li>
+						</ul>
+						<!--상시노출-->
+						<ul>
+							<li class="start"><a href="#" onclick="goBigbox(); return false;">빅박스 시작하기</a></li>
+							<!--<li class="realtime"><a href="https://pf.kakao.com/_Yyaxhxl" target="_blank">실시간채팅상담<img src="../../html/img/ic_kakao.png" alt="카카오실시간상담"></a></li>-->
+						</ul>
+					</div>
+
+					<ul class="item navi">
+						<li>
+							<h3 class="depth1-item"><a href="/pages/intro/index.asp"><span>웅진빅박스란?</span></a></h3>
+						</li>
+						<li>
+							<h3 class="accor-nav-title depth1-item"><span>사용설명서<i class="fas fa-plus"></i></span></h3>
+							<div class="accor-nav-content depth2-items">
+								<!--<a href="">빅박스 한눈에 보기</a>-->
+								<a href="/pages/guide/bigbox_tv.asp" >빅박스TV</a>
+								<a href="/pages/guide/word_kingdom.asp">워드킹덤</a>
+								<a href="/pages/guide/readingoceans.asp">리딩오션스</a>
+								<a href="/pages/guide/forest_of_expression.asp">표현의 숲</a>
+							</div>
+						</li>
+						<li>
+							<h3 class="depth1-item"><a href="/pages/order/index.asp"><span>학습신청</span></a></h3>
+						</li>
+						<li>
+							<h3 class="accor-nav-title depth1-item"><span>고객센터<i class="fas fa-plus"></i></span></h3>
+							<div class="accor-nav-content depth2-items">
+								<a href="/pages/customer/notice.asp">공지사항</a>
+								<a href="/download/bigbox_guide_ko_new.pdf" target="_blank">학습 가이드</a>
+								<a href="/pages/customer/faq.asp">자주 묻는 질문</a>
+								<a href="/pages/customer/qna.asp">1:1 문의</a>
+							</div>
+						</li>
+					</ul>
+					<div class="item btns">
+						<label class="hdr-btn use" for="regApass">이용권 등록/label>
+						<a href="/pages/mypage/myreport.asp" class="hdr-btn report">학습 리포트</a>
+					</div>
+					<div class="item">
+						<a href="https://forms.gle/m97pqri2zpR9kfv58" class="btn_link btn_teacher" target="_blank"><img src="../../html/img/m_btn_teacher.png">웅진컴퍼스 파트너 선생님 신청</a>
+						<a href="https://www.bigclassenglish.com/" class="btn_link btn_bigclass" target="_blank"><img src="../../html/img/m_btn_bigclass.png">웅진빅클래스 바로가기</a>
+					</div>
+				</nav><!--//mobile nav END-->
+			</div>
+		</section>
+	</header>
+	<!-- END :: HEADER --> 
+	<main>
+		<!--bread crumb START-->
+		<div class="bread-crumb bothside-space">
+			<ul class="width">
+				<li class="home">home</li>
+				<li class="dep1">사용설명서</li>
+				<li class="dep2">워드킹덤</li>
+			</ul>
+		</div>
+		<!--bread crumb END-->
+		<!--contents START 위아래는 임의로 주석처리 한 부분이 있어서 여기부터 붙여 넣어주세요. -->
+		<article class="manual wordkingdom">
+			<section class="section1">
+				<h4><img src="../../html/img/wordkingdom/tit_section1.png" alt="앞으로 10년은 더 해야 하는 영어! 아이가 스스로 찾아서 공부하고 좋아하게 할 수 없을까요?"></h4>
+				<div class="swiper-container visual_slide">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="../../html/img/wordkingdom/section1_slide1.png" alt="엄마! 저 게임 10분만 더 하면 안돼요?"></div>
+						<div class="swiper-slide"><img src="../../html/img/wordkingdom/section1_slide2.png" alt="선생님, 단어를 쉽게 외우는 방법은 없나요?"></div>
+						<div class="swiper-slide"><img src="../../html/img/wordkingdom/section1_slide3.png" alt="엄마! 단어를 외웠는데 기억이 안 나요."></div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<div class="banner"><p><img src="../../html/img/wordkingdom/txt_banner.png" alt="아이가 꾸준히 하려면, 재미 있어야 합니다."></p></div>
+			</section>
+			<section class="section2">
+				<div class="inner">
+					<h5><img src="../../html/img/wordkingdom/tit_section2.png" alt="더 재미있고, 완벽해진 new 워드킹덤을 소개합니다."></h5>
+					<ul>
+						<li class="list1">
+							<div class="txt_box">
+								<strong class="tit">매력적인 <em>세계관</em></strong>
+								<p class="sub_txt">용사가 되어 몬티와 함께 여행을 떠나요!</p>
+								<p class="tag">#몬티 #보카할범 #도둑 몬타스<br>#워드카드 #워드킹덤의 수호자</p>
+								<a href="javascript:openPop('pop_intro')" class="btn_go"><span>캐릭터 소개 보러 가기</span></a>
+							</div>
+							<div class="img_box slide_intro">
+								<a href="javascript:openPop('pop_video')" class="btn_video_pop"><img src="../../html/img/wordkingdom/section2_slide2_1.png" alt="워드킹덤 영상 시청하기"></a>
+							</div>
+						</li>
+						<li class="list2">
+							<div class="txt_box t_right">
+								<strong class="tit">맞춤형 <em>커리큘럼</em></strong>
+								<p class="sub_txt">아이의 수준에 맞는 단어를 학습해 나가요.</p>
+								<p class="tag">#몬티의 모험 #6개 스테이지 #스토리 모드<br>#카드를 찾으러 #여행을 떠나자</p>
+								<a href="javascript:openPop('pop_table')" class="btn_go"><span>학습 단어 구성표</span></a>
+							</div>
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom/section2_slide2_2.png" alt="몬티의 모험">
+							</div>
+						</li>
+						<li class="list3">
+							<div class="txt_box mid">
+								<strong class="tit">재미있는 <em>미니게임</em></strong>
+								<p class="sub_txt">신나게 즐기면서 영어 단어를<span class="tab_block">학습할 수 있어요!</span></p>
+								<p class="tag">#미니게임 #랭킹전 #프리모드<br>#스스로 학습 #골드 보상</p>
+							</div>
+							<div class="swiper-container img_box slide_game">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="../../html/img/wordkingdom/section2_slide3_1.png" alt="재미있는 미니게임"></div>
+									<div class="swiper-slide"><img src="../../html/img/wordkingdom/section2_slide3_2.png" alt="재미있는 미니게임"></div>
+									<div class="swiper-slide"><img src="../../html/img/wordkingdom/section2_slide3_3.png" alt="재미있는 미니게임"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-btn swiper-button-next"></div>
+								<div class="swiper-btn swiper-button-prev"></div>
+							</div>
+						</li>
+						<li class="list4">
+							<div class="txt_box t_right">
+								<strong class="tit">워드카드 <em>업그레이드</em></strong>
+								<p class="sub_txt">워드카드를 반복해서 학습하고, <span class="tab_block">레벨 업해요.</span></p>
+								<p class="tag">#최대 34번 복습 #학습 습관 형성 #복습 장려</p>
+								<a href="javascript:openPop('pop_word');" class="btn_go"><span>워드킹덤 영단어 맛보기</span></a>
+							</div>
+							<div class="swiper-container img_box slide_card">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><div><img src="../../html/img/wordkingdom/section2_slide4_1.png" alt="워드카드 업그레이드"></div></div>
+									<div class="swiper-slide"><div><img src="../../html/img/wordkingdom/section2_slide4_2.png" alt="워드카드 업그레이드"></div></div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-btn swiper-button-next"></div>
+								<div class="swiper-btn swiper-button-prev"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section3">
+				<div class="inner">
+					<h5><img src="../../html/img/wordkingdom/tit_section3.png" alt="여기서 잠깐! 단순히 재미만 갖췄다고 생각하시나요? 재미있고 탄탄한 영단어 학습 워드킹덤 Hero Stories"></h5>
+					<div class="box box1">
+						<div class="inner">
+							<span class="box_num"><img src="../../html/img/wordkingdom/star_num1.png" alt="1"></span>
+							<div class="tit_box">
+								<p class="sub_tit">교육부 지정 초등 필수 800단어 포함 최대 3,000단어 수록</p>
+								<p class="main_tit">
+									<strong class="bg_pp">인지</strong>
+									<strong class="bg_org">인식</strong>
+									<strong class="bg_gr">습득</strong>의 3단계로 <em class="color_pp">가장 효과적인 학습을 설계했어요.</em>
+								</p>
+							</div>
+							<p class="img_step">
+								<picture>
+									<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_step_mo.png">
+									<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_step.png">
+									<img src="../../html/img/wordkingdom/img_step.png" alt="워드플래시 (인지) 미니게임 (인식) 카드획득 (습득)">
+								</picture>
+							</p>
+							<p class="tit">4단계 누적&middot;반복학습</p>
+							<div class="swiper-container tab_slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="flex_box">
+											<div class="l_box">
+												<div class="num_list"><img src="../../html/img/wordkingdom/num_list1.png" alt="1"></div>
+												<div>
+													<span class="tit_step color_pp">누적&middot;반복학습</span>
+													<strong class="txt_step color_pp">1단계</strong>
+													<p class="sub_txt">학습일로부터 3일 이내의<br>단어 복습</p>
+												</div>
+											</div>
+											<div class="r_box">
+												<img src="../../html/img/wordkingdom/img_card1.png" alt="Levelup card">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="flex_box">
+											<div class="l_box">
+												<div class="num_list"><img src="../../html/img/wordkingdom/num_list2.png" alt="2"></div>
+												<div>
+													<span class="tit_step color_org">누적&middot;반복학습</span>
+													<strong class="txt_step color_org">2단계</strong>
+													<p class="sub_txt">학습일로부터 3일~5일 이내 <br>단어 복습</p>
+												</div>
+											</div>
+											<div class="r_box">
+												<img src="../../html/img/wordkingdom/img_card2.png" alt="Levelup card">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="flex_box">
+											<div class="l_box">
+												<div class="num_list"><img src="../../html/img/wordkingdom/num_list3.png" alt="3"></div>
+												<div>
+													<span class="tit_step color_gr">누적&middot;반복학습</span>
+													<strong class="txt_step color_gr">3단계</strong>
+													<p class="sub_txt">1개월 이내에 학습한<br>단어 복습</p>
+												</div>
+											</div>
+											<div class="r_box">
+												<img src="../../html/img/wordkingdom/img_card3.png" alt="Levelup card">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="flex_box">
+											<div class="l_box">
+												<div class="num_list"><img src="../../html/img/wordkingdom/num_list4.png" alt="4"></div>
+												<div>
+													<span class="tit_step color_pp">누적&middot;반복학습</span>
+													<strong class="txt_step color_pp">4단계</strong>
+													<p class="sub_txt">Stage 내 가장 많이 틀렸던<br>단어를 복습</p>
+												</div>
+											</div>
+											<div class="r_box">
+												<img src="../../html/img/wordkingdom/img_card4.png" alt="Levelup card">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<div class="box box2">
+						<div class="inner">
+							<span class="box_num"><img src="../../html/img/wordkingdom/star_num2.png" alt="2"></span>
+							<div class="tit_box">
+								<p class="sub_tit">Pre A1~B1 레벨의 ELT 교재에서 자주 사용하는 단어 선별</p>
+								<p class="main_tit"><span class="mo_block">원서 다독이 가능해지고,</span><span class="mo_block">일상 대화에 <em class="color_gr">90% 이상을 이해하는</span> 수준까지 도달할 수 있어요.</em></p>
+								<div class="img_graph">
+									<picture>
+										<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_graph_mo.png">
+										<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_graph.png">
+										<img src="../../html/img/wordkingdom/img_graph.png" alt="TV, 영어 대사 단어 빈도수 분석, Paul Nation 교수 (Victoria University of Wellington)">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box box3">
+						<span class="box_num"><img src="../../html/img/wordkingdom/star_num3.png" alt="3"></span>
+						<div class="tit_box">
+							<p class="sub_tit">짝꿍 표현과 주요 문법 단어 포함</p>
+							<p class="main_tit"><em class="color_org">단어의 개별적인 의미</em>와 <em class="color_org">일상 속 유용한 표현</em>도 <span class="tab_block">함께 익힐 수 있어요.</span></p>
+							<div class="img_grm">
+								<div class="mo_view">
+									<div class="swiper-container slide_grm">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img src="../../html/img/wordkingdom/img_grammar_mo1.png" alt="짝꿍 표현 짝꿍 표현을 배우면 원어민처럼 자연스럽게 생각하고 말할 수 있어요!">
+											</div>
+											<div class="swiper-slide">
+												<img src="../../html/img/wordkingdom/img_grammar_mo2.png" alt="기초 문법 규칙 문법 단어를 이미지로 반복 학습하면기초 문법 규칙을 스스로 깨칠 수 있어요.">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pc_view">
+									<picture>
+										<source media="(max-width:1024px)" srcset="../../html/img/wordkingdom/img_grammar_tab.png">
+										<source media="(min-width:1025px)" srcset="../../html/img/wordkingdom/img_grammar.png">
+										<img src="../../html/img/wordkingdom/img_grammar.png" alt="짝꿍 표현을 배우면 원어민처럼 자연스럽게 생각하고 말할 수 있어요. 문법 단어를 이미지로 반복 학습하면 기초 문법 규칙을 스스로 깨칠 수 있어요.">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section4">
+				<div class="inner">
+					<div>
+						<picture>
+							<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_section4_mo.png">
+							<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_section4.png">
+							<img src="../../html/img/wordkingdom/img_section4.png" alt="워드킹덤 2.0 : Hero Stories! 멋진 용사가 되어 몬티와 함께 여행을 떠나볼까요?">
+						</picture>
+						<a href="javascript://" onclick="getInstaller(); return false;" class="btn_down">빅박스 다운로드</a>
+					</div>
+				</div>
+			</section>
+			<div class="quick_banner">
+				<a href="javascript://" onclick="getInstaller(); return false;">
+					<picture>
+						<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_quick_mo.png">
+						<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_quick.png">
+						<img src="../../html/img/wordkingdom/img_quick.png" alt="워드킹덤 리뉴얼 빅박스 다운로드">
+					</picture>
+				</a>
+			</div>
+			<div class="dim"></div>
+			<!-- 비디오 팝업 -->
+			<div id="pop_video" class="pop_wrap pop_video">
+				<div>
+					<iframe width="100%" height="100%" src="" title="웅진빅박스 워드킹덤 인트로 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+				</div>
+				<a href="javascript:closePop('pop_video')" class="btn_close">닫기</a>
+			</div>
+			<!--// 비디오 팝업 -->
+			<!-- 캐릭터 소개 팝업 -->
+			<div id="pop_intro" class="pop_wrap pop_intro">
+				<div class="swiper-container pop_slide_intro">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_intro1_mo.png">
+								<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_intro1.png">
+								<img src="../../html/img/wordkingdom/img_intro1.png" alt="MONTY 몬티 워드킹덤 두 번째 수호자 몬티 몬스터인 엄마와 늑대인 아빠 사이에서 태어났어요. 초록색의 눈과 털이 매력적인 친구입니다. 친절하고도 용맹한 성격으로, 워드킹덤과 동물 친구들을 수호합니다.">
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_intro2_mo.png">
+								<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_intro2.png">
+								<img src="../../html/img/wordkingdom/img_intro2.png" alt="MONTAS 몬타스 워드카드를 훔친 도둑고양이 몬타스는 숲이 울창한 엘우드섬에서 태어났어요. 완전 범죄를 위해 항상 장갑을 끼고 다니며 구멍 난 보자기에 꿰맨 흔적이 많아요. 알고 보면 허당 같은 매력을 가진 귀여운 악당이랍니다.">
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_intro3_mo.png">
+								<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_intro3.png">
+								<img src="../../html/img/wordkingdom/img_intro3.png" alt="GRANPA VOCA 보카할범 몬티의 스승이자 워드킹덤 최고의 마법사 보카할범은 페어리 타운 출신의 요정이에요. 워드킹덤 아카데미의 뛰어난 학자이기도 하지요. 항상 인자한 얼굴을 하고 있지만 사실 장난기가 많답니다.">
+							</picture>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<a href="javascript:closePop('pop_intro')" class="btn_close">닫기</a>
+			</div>
+			<!--// 캐릭터 소개 팝업-->
+			<!-- 영단어 맛보기 리스트 팝업 -->
+			<div id="pop_word" class="pop_wrap pop_word">
+				<img src="../../html/img/wordkingdom/img_pop_word.png" alt="워드킹덤 영단어 맛보기 리스트">
+				<a href="javascript:closePop('pop_word')" class="btn_close">닫기</a>
+			</div>
+			<!--// 영단어 맛보기 리스트 팝업 -->
+			<!-- 학습 단어 구성표 팝업 -->
+			<div id="pop_table" class="pop_wrap pop_table">
+				<img src="../../html/img/wordkingdom/img_pop_table.png" alt="스테이지별 학습 단어 구성표">
+				<a href="javascript:closePop('pop_table')" class="btn_close">닫기</a>
+			</div>
+			<!--// 학습 단어 구성표 팝업 -->
+		</article>
+		<!--contents END -->
+	</main>
+
+	<!-- START :: FOOTER --> 
+	<a href="#top" class="tothe-top">TOP</a>
+	<footer id="footer">
+		<section class="tail-link bothside-space">
+			<h5 class="hidden">footer link</h5>
+			<div class="wrapper width">
+				<ul class="in-link">
+					<li><a href="/pages/intro/index.asp" >빅박스</a></li>
+					<li><a href="/pages/customer/notice.asp">고객센터</a></li>
+					<li><a href="/pages/member/privacy.asp">개인정보 처리방침</a></li>
+					<li><a href="/pages/member/terms.asp">이용약관</a></li>
+					<li><a href="https://www.wjcompass.com/new_kor/company/about.asp" target="_blank">회사소개</a></li>
+					<li><a href="/pages/customer/inquiry.asp">컨텐츠 제휴문의</a></li>
+				</ul>
+
+				<div class="besides-link">
+					<!--<ul class="sns-link">
+						<li><a href="https://bit.ly/3TErPfX" target="_blank"><img src="../../html/img/ic_facebook.png" ></a></li>
+						<li><a href="https://bit.ly/3htn6Ar" target="_blank"><img src="../../html/img/ic_instagram.png"></a></li>
+						<li><a href="https://bit.ly/3Ty9tNR" target="_blank"><img src="../../html/img/ic_youtube.png"></a></li>
+						<li><a href="https://bit.ly/3Eutj8n" target="_blank"><img src="../../html/img/ic_blog.png"></a></li>
+					</ul>-->
+
+					<dl class="related-link select-drdn">
+						<dt class="select-drdn-current"><span >제휴 사이트 바로가기</span></dt>
+						<dd class="select-drdn-wrapper">
+							<ul class="select-drdn-items">
+								<li><a href="https://www.wjcompass.com/" target="_blank">웅진컴퍼스</a></li>
+								<li><a href="https://www.bigclassenglish.com/" target="_blank">빅클래스</a></li>
+							</ul>
+						</dd>	
+					</dl>
+				</div>
+			</div>
+		</section>
+
+	  <section class="tail-info width bothside-space">
+			<h5 class="hidden">information</h5>
+	    <div class="info-item info">
+				<address><span>(주)웅진컴퍼스</span> <span>대표 :  김홍석</span> <span>사업자등록번호 : 214-87-35792</span> <span>통신판매업 : 제 2005-서울서초-05631호</span><br>
+				<span>주소 : 서울시 서초구 강남대로 39길 15-10 한라비발디스튜디오 193, 3층</span> <span>개인정보책임자 : 최정구부장</span><br>
+				<span>고객문의: 1544-0230</span> <span>E-mail : bigbox@wjcompass.com</span></address>
+				<p class="copyright">ⓒ playbigbox all rights reserved.</p>
+	    </div>
+
+	    <ul class="info-item ctf-mark" >
+				<li><img data-i18n="../../html/img/certi_mark1.png"></li>
+	    </ul>
+	  </section>
+	</footer>
+	<!-- END :: FOOTER --> 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  	<script src="../../html/js/default.js"></script>
+	<script src="../../html/plugins/aos/aos.js"></script>
+	<script>
+		AOS.init({
+			easing: 'ease-in-out-sine'
+		});
+	</script>
+</body>
+</html>
