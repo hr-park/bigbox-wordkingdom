@@ -38,9 +38,18 @@
 	<script type="text/javascript" src="../../html/js/handlebars.js"></script>
 	<link rel="stylesheet" href="../../html/css/contents.css">
 
-	<script src="../../html/plugins/swiper/package/js/swiper.min.js"></script> <!-- 추가 -->
-	<script src="../../html/js/wordkingdom.js"></script> <!-- 신규파일 -->
-	<link rel="stylesheet" href="../../html/css/wordkingdom.css"> <!-- 신규파일 -->
+	<script src="../../html/plugins/swiper/package/js/swiper.min.js"></script>
+	<link rel="stylesheet" href="../../html/css/wordkingdom_event.css"> <!-- 워드킹덤 프로모션 신규파일 -->
+	<link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+	<!-- 
+	워드킹덤 3월 프로모션
+
+	[New Css File]
+	/bigbox-wordkingdom-main/html/css/wordkingdom_event.css
+
+	[New Image Folder]
+	/bigbox-wordkingdom-main/html/img/wordkingdom_event
+	-->
 </head>
 <body class="idx">
 	<!-- START :: HEADER --> 
@@ -168,7 +177,7 @@
 	</header>
 	<!-- END :: HEADER --> 
 	<main>
-		<!--bread crumb START-->
+		<!--bread crumb START
 		<div class="bread-crumb bothside-space">
 			<ul class="width">
 				<li class="home">home</li>
@@ -177,296 +186,261 @@
 			</ul>
 		</div>
 		<!--bread crumb END-->
-		<!--contents START 위아래는 임의로 주석처리 한 부분이 있어서 여기부터 붙여 넣어주세요. -->
-		<article class="manual wordkingdom">
-			<section class="section1">
-				<h4><img src="../../html/img/wordkingdom/tit_section1.png" alt="앞으로 10년은 더 해야 하는 영어! 아이가 스스로 찾아서 공부하고 좋아하게 할 수 없을까요?"></h4>
-				<div class="swiper-container visual_slide">
+		<!--contents START -->
+		<article class="event_wrap">
+			<section class="visual_area">
+				<div class="inner">
+					<p class="txt1"><img src="../../html/img/wordkingdom_event/tit_sub.png" alt="영단어학습게임 워드킹덤 런칭 기념영어 단어"></p>
+					<p class="txt2">달달 외우게만 하면 될까요?</p>
+					<h4>자연스럽게 영단어가 외워지는 워드킹덤 Hero Stories하세요!</h4>
+					<p class="txt3">부담없이 가볍게 시작 가능한 혜택을 준비했어요.</p>
+					<img src="" alt="할인카드">
+					<dl class="period">
+						<dt>기간</dt>
+						<dd>03월 06일(월) ~ 03월 31일(금)</dd>
+					</dl>
+					<p class="txt_benefit"><img src="../../html/img/wordkingdom_event/txt_benefit.png" alt="최대 40% 즉시 할인 + 6개월 기간 연장!"></p>
+					<div class="btn_box">
+						<a href="#" onclick="getInstaller(); return false;" class="btn_exp"><strong>회원가입하고</strong> 7일 체험하기</a>
+						<a href="/pages/order/index.asp" class="btn_buy"><strong>혜택 받고</strong> 지금 구매하기</a>
+					</div>
+				</div>
+			</section>
+			<section class="review_area">
+				<h5>미리 써본 고객님들이 증명하는 워드킹덤 Hero Stories의 놀라운 영어 학습 효과!</h5>
+				<div class="swiper review_slide">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="../../html/img/wordkingdom/section1_slide1.png" alt="엄마! 저 게임 10분만 더 하면 안돼요?"></div>
-						<div class="swiper-slide"><img src="../../html/img/wordkingdom/section1_slide2.png" alt="선생님, 단어를 쉽게 외우는 방법은 없나요?"></div>
-						<div class="swiper-slide"><img src="../../html/img/wordkingdom/section1_slide3.png" alt="엄마! 단어를 외웠는데 기억이 안 나요."></div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review1.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">매일 게임하듯 영어공부하고 얻는 골드코인으로 아바타 배경과 옷, 머리도 구매했어요. <em>꾸미기 좋아하는 아이가 아이템 구매를 위해 동기부여되어 영어공부 하게되네요.</em></p>
+								<p class="info"><span class="name">최영란</span><span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review2.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">워드킹덤중 제일 좋아하는 워드러시!!! <em>워드러시 하느라 시간 가는줄 모르네요</em></p>
+								<span class="name">우혜주</span>
+								<span class="grade">평점 아주 만족</span>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review3.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">오늘도 워드유니버스 재미있게 했어요, <em>저녁 먹고 씻고 영어 웅진 빅박스 하자고 하네요! #아이가 먼저 하자고 하는 영어 학습</em></p>
+								<p class="name">박아영 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review4.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">워드플래시 단어카드 보고 단어와 이미지를 암기하는 것임 워드러시 워드플래시에서 보였던 단어를 듣고 그림을 찾아 아이템 먹으면서 미사일도 쏘고 방어막과 스피드도 생기는 등 <em>게임식으로 나오고 순위가 매겨져 경쟁심도 생기고 좋아합니다. ^^</em></p>
+								<p class="name">박양환 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review5.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">어제는 러시만 신나게 하고 질리지않으려나 했는데 <em>아침부터 pc를 켜네요. 저녁에도 먼저 켜서 한번 더 하겠다고하고..^^</em>경험해보니 확실히 공부다운(?)공부를 하려면 플래시부터 순차적으로 하는게 맞네요.다른 스타일로 동일 어휘를 배우니 질리지 않고 기억에 남기기에 확실하고..만족합니다.</p>
+								<p class="name">2633 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review6.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">아이가 즐거워합니다~ <em>특히 게임에서.. 끝까지 가려고 하다보니 열심히 듣네요!!!!!! 아주 재밌어합니다~ 저희 아들은 이제 막 영어를 시작해서 단어 개수가 적지 않네요!!!!! 게임에 여러번 참여할 수 있다면 반복적으로 익히는데 도움될 듯 합니다!!!</em></p>
+								<p class="name">최연정 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review7.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">열심히 단어 공부하고 모은 골드로 아바타를 멋있게 꾸며보겠데요~~ㅎㅎ~~<em>더 멋있는 아바타를 만들기 위해서 골드를 많이 모아보겠다네요, 아이들한테는 이런 활동도 동기가 되는군요^^~~</em>빨간 머리만 들고 멋있다고 좋아하는 우리 꼬맹이 너무 귀엽습니다.</em></p>
+								<p class="name">박현진 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review8.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">자가격리중에도 영어공부 게임하네요. <em>시키지 않아도 하겠다고 했어요.</em></p>
+								<p class="name">김신애 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review9.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">ㅎ쉽다며 재미있게 실행하네요 <em>엄마보다도 이젠 단어를 잘찾네요~</em></p>
+								<p class="name">임은희 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review10.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review"><em>스스로 하겠다고 컴퓨터를 가져오네요</em></p>
+								<p class="name">강태관 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review11.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">아이가 인트로 영상을 보더니 기대감을 가지고 시작하네요 ㅎㅎ <em>재미있다고 한 번에 몇 일 분량을 계속 하고 있습니다 ^^ 아이들이 충분히 흥미를 가질 수 있도록 잘 구성된 것 같아요</em></p>
+								<p class="name">이예진 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review12.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">아바타가 정말 예쁜거같아요 아이가 아바타샵 구경하고나면 골드 모으겠다고 빅박스를 더해요. 벌써 많이 사모았아요 <em>확실히 동기부여가 되는것 같아요.</em> 개인적으로 에이프릴 학원 메타보다 웅진빅박스 아바타가 100배는 더 예쁘게 되있는거같아요 ㅋㅋ</p>
+								<p class="name">이혜영 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review13.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">재밉게 하고 있어요. <em>랭킹 순위보는거도 재미있어 합니다. 승부욕두 생기는것 같아요~!</em></p>
+								<p class="name">이선숙 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review14.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">랭킹이 있어 승부욕을 자극해 더 열심히 하게 돼요. 한글어휘를 보고 영단어로 맞추는 학습이 아니라 좋아요. <em>그림이나 사진을 보면서 영단어를 빠르게 생각하기, 소리에도 집중할 수 있게 되는 것이 장점인 것 같아요.</em></p>
+								<p class="name">윤수영 <span class="grade">평점 아주 만족</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review15.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">인트로에 나오는 음악이 좋은지 <em>듣자마자 내내 흥얼거리네요~ 웹툰으로 배우는 단어, 새로운 시도라 흥미롭게 봤습니다.</em></p>
+								<p class="name">??</p>
+							</div>
+						</div>
+						<div class="swiper-slide" loading="lazy">
+							<div class="img_box">
+								<img src="../../html/img/wordkingdom_event/img_review16.png" alt="고객 후기">
+							</div>
+							<div class="txt_box">
+								<p class="txt_review">5일째 로긴해서 열심히 빅박스 열일중입니다. 따로 영어를 공부하지 않아서인지 매일 흥미롭게 하고 있어요^^ 오늘은 워드플래시도 하나도 안틀렸다고 좋아하네요 ^^ 66일까지 고고 음악이 웅장해서 옆에서 보는데 재미있어요. <em>초2인데 딱 수준에 맞구요 오늘 3게임하면서 단어 15개도 금방 외웠어요!</em></p>
+								<p class="name">추경미</p>
+							</div>
+						</div>
 					</div>
 					<div class="swiper-pagination"></div>
-					<div class="swiper-button-next"></div>
+					<!-- If we need navigation buttons -->
 					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
-				<div class="banner"><p><img src="../../html/img/wordkingdom/txt_banner.png" alt="아이가 꾸준히 하려면, 재미 있어야 합니다."></p></div>
-			</section>
-			<section class="section2">
 				<div class="inner">
-					<h5><img src="../../html/img/wordkingdom/tit_section2.png" alt="더 재미있고, 완벽해진 new 워드킹덤을 소개합니다."></h5>
-					<ul>
-						<li class="list1">
-							<div class="txt_box">
-								<strong class="tit">매력적인 <em>세계관</em></strong>
-								<p class="sub_txt">용사가 되어 몬티와 함께 여행을 떠나요!</p>
-								<p class="tag">#몬티 #보카할범 #도둑 몬타스<br>#워드카드 #워드킹덤의 수호자</p>
-								<a href="javascript:openPop('pop_intro')" class="btn_go"><span>캐릭터 소개 보러 가기</span></a>
-							</div>
-							<div class="img_box slide_intro">
-								<a href="javascript:openPop('pop_video')" class="btn_video_pop"><img src="../../html/img/wordkingdom/section2_slide2_1.png" alt="워드킹덤 영상 시청하기"></a>
-							</div>
-						</li>
-						<li class="list2">
-							<div class="txt_box t_right">
-								<strong class="tit">맞춤형 <em>커리큘럼</em></strong>
-								<p class="sub_txt">아이의 수준에 맞는 단어를 학습해 나가요.</p>
-								<p class="tag">#몬티의 모험 #6개 스테이지 #스토리 모드<br>#카드를 찾으러 #여행을 떠나자</p>
-								<a href="javascript:openPop('pop_table')" class="btn_go"><span>학습 단어 구성표</span></a>
-							</div>
-							<div class="img_box">
-								<img src="../../html/img/wordkingdom/section2_slide2_2.png" alt="몬티의 모험">
+					<div class="btn_box">
+						<a href="#" onclick="getInstaller(); return false;" class="btn_exp"><strong>회원가입하고</strong> 7일 체험하기</a>
+						<a href="/pages/order/index.asp" class="btn_buy"><strong>혜택 받고</strong> 지금 구매하기</a>
+					</div>
+				</div>
+			</section>
+			<section class="point_area">
+				<div class="inner">
+					<h5>우리 아이가 꾸준히 재미있게 학습할 수 있는 워드킹덤 Hero Stories만의 비결</h5>
+					<ul class="point_list">
+						<li>
+							<strong class="num_point"><img src="../../html/img/wordkingdom_event/tit_point1.png" alt="Point01"></strong>
+							<p>매력적인 세계관</p>
+							<div class="data_box">
+								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/me5V_f82BPk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+								<!--<img src="../../html/img/wordkingdom_event/img_point1.png" alt="매력적인 세계관">-->
 							</div>
 						</li>
-						<li class="list3">
-							<div class="txt_box mid">
-								<strong class="tit">재미있는 <em>미니게임</em></strong>
-								<p class="sub_txt">신나게 즐기면서 영어 단어를<span class="tab_block">학습할 수 있어요!</span></p>
-								<p class="tag">#미니게임 #랭킹전 #프리모드<br>#스스로 학습 #골드 보상</p>
-							</div>
-							<div class="swiper-container img_box slide_game">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><img src="../../html/img/wordkingdom/section2_slide3_1.png" alt="재미있는 미니게임"></div>
-									<div class="swiper-slide"><img src="../../html/img/wordkingdom/section2_slide3_2.png" alt="재미있는 미니게임"></div>
-									<div class="swiper-slide"><img src="../../html/img/wordkingdom/section2_slide3_3.png" alt="재미있는 미니게임"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-								<div class="swiper-btn swiper-button-next"></div>
-								<div class="swiper-btn swiper-button-prev"></div>
+						<li>
+							<strong class="num_point"><img src="../../html/img/wordkingdom_event/tit_point2.png" alt="Point02"></strong>
+							<p>맞춤형 커리큘럼</p>
+							<div class="data_box">
+								<img src="../../html/img/wordkingdom_event/img_point2.png" alt="맞춤형 커리큘럼">
 							</div>
 						</li>
-						<li class="list4">
-							<div class="txt_box t_right">
-								<strong class="tit">워드카드 <em>업그레이드</em></strong>
-								<p class="sub_txt">워드카드를 반복해서 학습하고, <span class="tab_block">레벨 업해요.</span></p>
-								<p class="tag">#최대 34번 복습 #학습 습관 형성 #복습 장려</p>
-								<a href="javascript:openPop('pop_word');" class="btn_go"><span>워드킹덤 영단어 맛보기</span></a>
+						<li>
+							<strong class="num_point"><img src="../../html/img/wordkingdom_event/tit_point3.png" alt="Point03"></strong>
+							<p>재미있는 미니게임</p>
+							<div class="data_box">
+								<img src="../../html/img/wordkingdom_event/img_point3.png" alt="재미있는 미니게임">
 							</div>
-							<div class="swiper-container img_box slide_card">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><div><img src="../../html/img/wordkingdom/section2_slide4_1.png" alt="워드카드 업그레이드"></div></div>
-									<div class="swiper-slide"><div><img src="../../html/img/wordkingdom/section2_slide4_2.png" alt="워드카드 업그레이드"></div></div>
-								</div>
-								<div class="swiper-pagination"></div>
-								<div class="swiper-btn swiper-button-next"></div>
-								<div class="swiper-btn swiper-button-prev"></div>
+						</li>
+						<li>
+							<strong class="num_point"><img src="../../html/img/wordkingdom_event/tit_point4.png" alt="Point04"></strong>
+							<p>워드카드 업그레이드</p>
+							<div class="data_box">
+								<img src="../../html/img/wordkingdom_event/img_point4.png" alt="워드카드 업그레이드">
 							</div>
 						</li>
 					</ul>
-				</div>
-			</section>
-			<section class="section3">
-				<div class="inner">
-					<h5><img src="../../html/img/wordkingdom/tit_section3.png" alt="여기서 잠깐! 단순히 재미만 갖췄다고 생각하시나요? 재미있고 탄탄한 영단어 학습 워드킹덤 Hero Stories"></h5>
-					<div class="box box1">
-						<div class="inner">
-							<span class="box_num"><img src="../../html/img/wordkingdom/star_num1.png" alt="1"></span>
-							<div class="tit_box">
-								<p class="sub_tit">교육부 지정 초등 필수 800단어 포함 최대 3,000단어 수록</p>
-								<p class="main_tit">
-									<strong class="bg_pp">인지</strong>
-									<strong class="bg_org">인식</strong>
-									<strong class="bg_gr">습득</strong>의 3단계로 <em class="color_pp">가장 효과적인 학습을 설계했어요.</em>
-								</p>
-							</div>
-							<p class="img_step">
-								<picture>
-									<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_step_mo.png">
-									<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_step.png">
-									<img src="../../html/img/wordkingdom/img_step.png" alt="워드플래시 (인지) 미니게임 (인식) 카드획득 (습득)">
-								</picture>
-							</p>
-							<p class="tit">4단계 누적&middot;반복학습</p>
-							<div class="swiper-container tab_slide">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="flex_box">
-											<div class="l_box">
-												<div class="num_list"><img src="../../html/img/wordkingdom/num_list1.png" alt="1"></div>
-												<div>
-													<span class="tit_step color_pp">누적&middot;반복학습</span>
-													<strong class="txt_step color_pp">1단계</strong>
-													<p class="sub_txt">학습일로부터 3일 이내의<br>단어 복습</p>
-												</div>
-											</div>
-											<div class="r_box">
-												<img src="../../html/img/wordkingdom/img_card1.png" alt="Levelup card">
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="flex_box">
-											<div class="l_box">
-												<div class="num_list"><img src="../../html/img/wordkingdom/num_list2.png" alt="2"></div>
-												<div>
-													<span class="tit_step color_org">누적&middot;반복학습</span>
-													<strong class="txt_step color_org">2단계</strong>
-													<p class="sub_txt">학습일로부터 3일~5일 이내 <br>단어 복습</p>
-												</div>
-											</div>
-											<div class="r_box">
-												<img src="../../html/img/wordkingdom/img_card2.png" alt="Levelup card">
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="flex_box">
-											<div class="l_box">
-												<div class="num_list"><img src="../../html/img/wordkingdom/num_list3.png" alt="3"></div>
-												<div>
-													<span class="tit_step color_gr">누적&middot;반복학습</span>
-													<strong class="txt_step color_gr">3단계</strong>
-													<p class="sub_txt">1개월 이내에 학습한<br>단어 복습</p>
-												</div>
-											</div>
-											<div class="r_box">
-												<img src="../../html/img/wordkingdom/img_card3.png" alt="Levelup card">
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="flex_box">
-											<div class="l_box">
-												<div class="num_list"><img src="../../html/img/wordkingdom/num_list4.png" alt="4"></div>
-												<div>
-													<span class="tit_step color_pp">누적&middot;반복학습</span>
-													<strong class="txt_step color_pp">4단계</strong>
-													<p class="sub_txt">Stage 내 가장 많이 틀렸던<br>단어를 복습</p>
-												</div>
-											</div>
-											<div class="r_box">
-												<img src="../../html/img/wordkingdom/img_card4.png" alt="Levelup card">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-						</div>
-					</div>
-					<div class="box box2">
-						<div class="inner">
-							<span class="box_num"><img src="../../html/img/wordkingdom/star_num2.png" alt="2"></span>
-							<div class="tit_box">
-								<p class="sub_tit">Pre A1~B1 레벨의 ELT 교재에서 자주 사용하는 단어 선별</p>
-								<p class="main_tit"><span class="mo_block">원서 다독이 가능해지고,</span><span class="mo_block">일상 대화에 <em class="color_gr">90% 이상을 이해하는</span> 수준까지 도달할 수 있어요.</em></p>
-								<div class="img_graph">
-									<picture>
-										<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_graph_mo.png">
-										<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_graph.png">
-										<img src="../../html/img/wordkingdom/img_graph.png" alt="TV, 영어 대사 단어 빈도수 분석, Paul Nation 교수 (Victoria University of Wellington)">
-									</picture>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box box3">
-						<span class="box_num"><img src="../../html/img/wordkingdom/star_num3.png" alt="3"></span>
-						<div class="tit_box">
-							<p class="sub_tit">짝꿍 표현과 주요 문법 단어 포함</p>
-							<p class="main_tit"><em class="color_org">단어의 개별적인 의미</em>와 <em class="color_org">일상 속 유용한 표현</em>도 <span class="tab_block">함께 익힐 수 있어요.</span></p>
-							<div class="img_grm">
-								<div class="mo_view">
-									<div class="swiper-container slide_grm">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<img src="../../html/img/wordkingdom/img_grammar_mo1.png" alt="짝꿍 표현 짝꿍 표현을 배우면 원어민처럼 자연스럽게 생각하고 말할 수 있어요!">
-											</div>
-											<div class="swiper-slide">
-												<img src="../../html/img/wordkingdom/img_grammar_mo2.png" alt="기초 문법 규칙 문법 단어를 이미지로 반복 학습하면기초 문법 규칙을 스스로 깨칠 수 있어요.">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="pc_view">
-									<picture>
-										<source media="(max-width:1024px)" srcset="../../html/img/wordkingdom/img_grammar_tab.png">
-										<source media="(min-width:1025px)" srcset="../../html/img/wordkingdom/img_grammar.png">
-										<img src="../../html/img/wordkingdom/img_grammar.png" alt="짝꿍 표현을 배우면 원어민처럼 자연스럽게 생각하고 말할 수 있어요. 문법 단어를 이미지로 반복 학습하면 기초 문법 규칙을 스스로 깨칠 수 있어요.">
-									</picture>
-								</div>
-							</div>
-						</div>
+					<div class="btn_box">
+						<a href="#" onclick="getInstaller(); return false;" class="btn_exp"><strong>회원가입하고</strong> 7일 체험하기</a>
+						<a href="/pages/order/index.asp" class="btn_buy"><strong>혜택 받고</strong> 지금 구매하기</a>
 					</div>
 				</div>
 			</section>
-			<section class="section4">
-				<div class="inner">
-					<div>
-						<picture>
-							<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_section4_mo.png">
-							<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_section4.png">
-							<img src="../../html/img/wordkingdom/img_section4.png" alt="워드킹덤 2.0 : Hero Stories! 멋진 용사가 되어 몬티와 함께 여행을 떠나볼까요?">
-						</picture>
-						<a href="javascript://" onclick="getInstaller(); return false;" class="btn_down">빅박스 다운로드</a>
-					</div>
-				</div>
-			</section>
-			<div class="quick_banner">
-				<a href="javascript://" onclick="getInstaller(); return false;">
-					<picture>
-						<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_quick_mo.png">
-						<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_quick.png">
-						<img src="../../html/img/wordkingdom/img_quick.png" alt="워드킹덤 리뉴얼 빅박스 다운로드">
-					</picture>
-				</a>
-			</div>
-			<div class="dim"></div>
-			<!-- 비디오 팝업 -->
-			<div id="pop_video" class="pop_wrap pop_video">
-				<div>
-					<iframe width="100%" height="100%" src="" title="웅진빅박스 워드킹덤 인트로 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-				</div>
-				<a href="javascript:closePop('pop_video')" class="btn_close">닫기</a>
-			</div>
-			<!--// 비디오 팝업 -->
-			<!-- 캐릭터 소개 팝업 -->
-			<div id="pop_intro" class="pop_wrap pop_intro">
-				<div class="swiper-container pop_slide_intro">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<picture>
-								<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_intro1_mo.png">
-								<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_intro1.png">
-								<img src="../../html/img/wordkingdom/img_intro1.png" alt="MONTY 몬티 워드킹덤 두 번째 수호자 몬티 몬스터인 엄마와 늑대인 아빠 사이에서 태어났어요. 초록색의 눈과 털이 매력적인 친구입니다. 친절하고도 용맹한 성격으로, 워드킹덤과 동물 친구들을 수호합니다.">
-							</picture>
-						</div>
-						<div class="swiper-slide">
-							<picture>
-								<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_intro2_mo.png">
-								<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_intro2.png">
-								<img src="../../html/img/wordkingdom/img_intro2.png" alt="MONTAS 몬타스 워드카드를 훔친 도둑고양이 몬타스는 숲이 울창한 엘우드섬에서 태어났어요. 완전 범죄를 위해 항상 장갑을 끼고 다니며 구멍 난 보자기에 꿰맨 흔적이 많아요. 알고 보면 허당 같은 매력을 가진 귀여운 악당이랍니다.">
-							</picture>
-						</div>
-						<div class="swiper-slide">
-							<picture>
-								<source media="(max-width:640px)" srcset="../../html/img/wordkingdom/img_intro3_mo.png">
-								<source media="(min-width:641px)" srcset="../../html/img/wordkingdom/img_intro3.png">
-								<img src="../../html/img/wordkingdom/img_intro3.png" alt="GRANPA VOCA 보카할범 몬티의 스승이자 워드킹덤 최고의 마법사 보카할범은 페어리 타운 출신의 요정이에요. 워드킹덤 아카데미의 뛰어난 학자이기도 하지요. 항상 인자한 얼굴을 하고 있지만 사실 장난기가 많답니다.">
-							</picture>
-						</div>
-					</div>
-					<div class="swiper-pagination"></div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-				</div>
-				<a href="javascript:closePop('pop_intro')" class="btn_close">닫기</a>
-			</div>
-			<!--// 캐릭터 소개 팝업-->
-			<!-- 영단어 맛보기 리스트 팝업 -->
-			<div id="pop_word" class="pop_wrap pop_word">
-				<img src="../../html/img/wordkingdom/img_pop_word.png" alt="워드킹덤 영단어 맛보기 리스트">
-				<a href="javascript:closePop('pop_word')" class="btn_close">닫기</a>
-			</div>
-			<!--// 영단어 맛보기 리스트 팝업 -->
-			<!-- 학습 단어 구성표 팝업 -->
-			<div id="pop_table" class="pop_wrap pop_table">
-				<img src="../../html/img/wordkingdom/img_pop_table.png" alt="스테이지별 학습 단어 구성표">
-				<a href="javascript:closePop('pop_table')" class="btn_close">닫기</a>
-			</div>
-			<!--// 학습 단어 구성표 팝업 -->
 		</article>
+		<style>header{display:none}</style>
+		<script type="text/javascript">
+		//BODY태그 최하단으로 이동 필요
+		$(function(){
+			var reviewSlide = new Swiper('.review_slide', {
+				lazy: true,
+				width:346,
+				spaceBetween: 12,
+				autoplay: {
+					delay: 2000,
+				},
+				speed: 1000,
+				arrows: true,
+				navigation: {
+					nextEl: '.review_slide .swiper-button-next',
+					prevEl: '.review_slide .swiper-button-prev',
+				},
+				/*breakpoints: {
+					320: {
+						slidesPerView: 1
+					},
+					481: {
+						spaceBetween: 20,
+						slidesPerView: 2
+					},
+					961: {
+						slidesPerView: 3
+					}
+				}*/
+			});
+		});
+		</script>
 		<!--contents END -->
 	</main>
 
@@ -505,20 +479,18 @@
 				</div>
 			</div>
 		</section>
-
-	  <section class="tail-info width bothside-space">
+		<section class="tail-info width bothside-space">
 			<h5 class="hidden">information</h5>
-	    <div class="info-item info">
+			<div class="info-item info">
 				<address><span>(주)웅진컴퍼스</span> <span>대표 :  김홍석</span> <span>사업자등록번호 : 214-87-35792</span> <span>통신판매업 : 제 2005-서울서초-05631호</span><br>
 				<span>주소 : 서울시 서초구 강남대로 39길 15-10 한라비발디스튜디오 193, 3층</span> <span>개인정보책임자 : 최정구부장</span><br>
 				<span>고객문의: 1544-0230</span> <span>E-mail : bigbox@wjcompass.com</span></address>
 				<p class="copyright">ⓒ playbigbox all rights reserved.</p>
-	    </div>
-
-	    <ul class="info-item ctf-mark" >
+			</div>
+			<ul class="info-item ctf-mark" >
 				<li><img data-i18n="../../html/img/certi_mark1.png"></li>
-	    </ul>
-	  </section>
+			</ul>
+		</section>
 	</footer>
 	<!-- END :: FOOTER --> 
 
