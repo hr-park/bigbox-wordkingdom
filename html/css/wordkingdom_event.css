@@ -7,15 +7,11 @@
  font-style: normal;
 }*/
 
-:root{
-    --colorFg4:#f5a200;
-}
-
 .event_wrap{font-family:'Pretendard';font-weight:400;letter-spacing:-0.04em;}
 .event_wrap img{max-width:100%}
 .event_wrap section{padding:100px 0}
-.event_wrap section .inner{width:1024px;margin:0 auto}
-.event_wrap section h5{text-align:center}
+.event_wrap section .inner{max-width:1024px;margin:0 auto}
+.event_wrap section .sub_tit{text-align:center}
 
 .visual_area{padding:65px 0 100px !important;text-align:center;background:#5F9B4D url('../../html/img/wordkingdom_event/bg_visual.png') no-repeat 50% 0}
 .visual_area .txt1{width:417px;margin:0 auto}
@@ -27,9 +23,10 @@
 .visual_area dl.period dd{font-weight:300;font-size:24px;line-height:29px;letter-spacing: -0.02em;color:#fff;}
 
 .review_area{background:#FCE56E url('../../html/img/wordkingdom_event/bg_review.png') no-repeat 50% 0}
-.review_area h5{margin-bottom:55px}
+.review_area .sub_tit{margin-bottom:55px}
 .review_area .review_slide{overflow:hidden;position:relative;}
-.review_area .review_slide .swiper-slide{width:346px;height:472px;padding:24px;border-radius:30px;background:#fff;}
+.review_area .review_slide .swiper-wrapper{padding:0 40px;}
+.review_area .review_slide .swiper-slide{width:346px;height:472px;margin-right:12px;padding:24px;border-radius:30px;background:#fff;}
 .review_area .review_slide .txt_review{overflow:hidden;max-height:172px;font-weight:300;font-size:17px;line-height:1.29;text-align:justify;letter-spacing: -0.02em;color:#000;}
 .review_area .review_slide .txt_review em{font-weight:700;text-decoration:underline}
 .review_area .review_slide .txt_box{padding-top:20px;margin-top:auto}
@@ -38,13 +35,14 @@
 .review_area .review_slide .swiper-button-next:after,
 .review_area .review_slide .swiper-button-prev:after{display:none}
 .review_area .review_slide .swiper-button-prev,
-.review_area .review_slide .swiper-button-next{display:none;width:52px;height:52px;border-radius:50%;}
-.review_area .review_slide:hover .swiper-button-prev{display:inline-block;left:50%;margin-left:-512px;background:url('../../html/img/wordkingdom_event/btn_prev.png') no-repeat 50% 50% / 100% auto}
-.review_area .review_slide:hover .swiper-button-next{display:inline-block;right:50%;margin-right:-512px;background:url('../../html/img/wordkingdom_event/btn_next.png') no-repeat 50% 50% / 100% auto}
-
+.review_area .review_slide .swiper-button-next{display:none;width:52px;height:52px;border-radius:50%;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);}
+.review_area .review_slide .swiper-button-prev{left:50%;margin-left:-512px;background:url('../../html/img/wordkingdom_event/btn_prev.png') no-repeat 50% 50% / 100% auto}
+.review_area .review_slide .swiper-button-next{right:50%;margin-right:-512px;background:url('../../html/img/wordkingdom_event/btn_next.png') no-repeat 50% 50% / 100% auto}
+.review_area .review_slide:hover .swiper-button-prev,
+.review_area .review_slide:hover .swiper-button-next{display:inline-block;}
 
 .point_area{background:#1648C7 url('../../html/img/wordkingdom_event/bg_point.png') no-repeat 50% 0}
-.point_area h5{margin-bottom:45px}
+.point_area .sub_tit{margin-bottom:45px}
 .point_area .point_list{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .point_area .point_list li{width:calc(50% - 6px);padding:10px 16px 24px;background:#fff;text-align:center;border:1px solid #537DEA;border-radius:1px 0 0 0;}
 .point_area .point_list li:nth-child(n+3){margin-top:12px;}
@@ -55,20 +53,44 @@
 .point_area .point_list li .data_box img{position:absolute;top:0;left:0;width:100%;height:100%;}
 
 .btn_box{display:flex;justify-content:space-between;align-items:center;margin-top:40px;}
-.btn_box a{position:relative;width:calc(50% - 6px);height:76px;font-weight:800;color:#fff;font-size:30px;line-height:76px;text-align:center;border-radius:20px;}
+.btn_box a{position:relative;width:calc(50% - 6px);height:76px;font-weight:800;color:#fff;font-size:30px;line-height:76px;text-align:center;border-radius:20px;box-shadow:0 4px 0 #CC5500;}
 .btn_box a:after{content:'';position:absolute;left:15px;top:2px;display:block;opacity:0.2;width:calc(100% - 30px);height:5px;background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);border-radius:100px;}
 .btn_box a:hover{color:#fff}
 .btn_box a strong{color:#FFF839}
-.btn_box .btn_exp{background:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 56.29%), #FF6B01;box-shadow:0 4px 0 #CC5500;border-radius:20px;}
-.btn_box .btn_buy{background:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 56.29%), #FF2F01;box-shadow:0 4px 0 #CC5500;border-radius:20px;}
+.btn_box .btn_exp{background:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 56.29%), #FF6B01;}
+.btn_box .btn_buy{background:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 56.29%), #FF2F01;}
 
 
 @media screen and (max-width: 1280px){
 }
 @media screen and (max-width: 1024px){
+	/*tab*/
+	.event_wrap section .inner{padding:0 30px}
+	.visual_area .txt3{font-size:24px}
+	.review_area .review_slide .swiper-wrapper{padding:0 50px;}
+	.review_area .review_slide .swiper-button-prev{left:20px;margin-left:0;}
+	.review_area .review_slide .swiper-button-next{right:20px;margin-right:0;}
+	.btn_box a{font-size:28px}
+
 }
 @media screen and (max-width: 1080px){
 }
 @media screen and (max-width: 640px){
+	/*mo*/
+	.visual_area .txt3{font-size:14px}{
+
+	.review_area .review_slide{padding:0 50px}
+	.review_area .review_slide .swiper-wrapper{padding:0}
+	.review_area .review_slide .swiper-slide{margin-right:0}
+	.review_area .review_slide .swiper-button-prev{display:inline-block;left:25px;}
+	.review_area .review_slide .swiper-button-next{display:inline-block;right:25px}
+
+	.event_wrap .point_area{padding:40px 10px}
+	.point_area .point_list li{width:100%;margin-bottom:12px;}
+	.point_area .point_list li > p{font-size:28px}
+
+	.btn_box{width:calc(100% - 58px);flex-direction:column;margin:40px auto 0;}
+	.btn_box a{width:100%;height:70px;font-size:22px;}
+	.btn_box a.btn_exp{margin-bottom:8px}
 }
 @media screen and (max-width: 480px){}
