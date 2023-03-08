@@ -107,6 +107,7 @@
 	.point_area .sub_tit{max-width:330px;margin:0 auto 30px}
 	.point_area .point_list li{width:100%;padding:22px 8px 8px;margin-bottom:12px;}
 	.point_area .point_list li:nth-child(n+3){margin-top:0}
+	.point_area .point_list li:last-child{margin-bottom:0}
 	.point_area .point_list li .num_point{width:110px}
 	.point_area .point_list li > p{margin:10px 0 20px;font-size:26px;line-height:32px;}
 	.btn_box{/*width:calc(100% - 58px);*/width:100%;flex-direction:column;margin:40px auto 0;}
