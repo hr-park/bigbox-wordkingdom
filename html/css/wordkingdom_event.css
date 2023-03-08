@@ -82,7 +82,7 @@
     background-repeat: no-repeat,no-repeat;
     background-position: 33% 130%, 50% 50%;
     background-size: 130% auto, 100% auto;*/
-	background:url('../../html/img/wordkingdom_event/bg_visual_mo.png') no-repeat 50% 0 / 100% auto;
+	background:url('../../html/img/wordkingdom_event/bg_visual_mo.png') no-repeat 50% 100% / 100% auto;
 	}
 	.visual_area .top_visual{max-width:340px;}
 	.visual_area dl.period{margin-top:40px}
@@ -92,7 +92,7 @@
 	.info_area .pc_view{display:none}
 	.info_area .mo_view li + li{margin-top:30px;}
 	.review_area{padding:60px 0 !important;background:#FCE56E url('../../html/img/wordkingdom_event/bg_review_mo.png') no-repeat 50% 50% / 100% auto}
-	.review_area .sub_tit{width:320px;margin:0 auto 30px;}
+	.review_area .sub_tit{max-width:320px;margin:0 auto 30px;}
 	.review_area .review_slide{padding:0 40px}
 	.review_area .review_slide .swiper-wrapper{padding:0;}
 	.review_area .review_slide .swiper-slide{height:428px;margin-right:0}
@@ -104,6 +104,7 @@
 	.review_area .review_slide .txt_box .info{font-size:14px}
 	.review_area .review_slide .txt_box .grade{width:110px;height:18px;margin-left:6px;}
 	.event_wrap .point_area{padding:40px 0}
+	.point_area .sub_tit{max-width:330px;margin:0 auto 30px}
 	.point_area .point_list li{width:100%;padding:22px 8px 8px;margin-bottom:12px;}
 	.point_area .point_list li:nth-child(n+3){margin-top:0}
 	.point_area .point_list li .num_point{display:inline-block;width:110px}
