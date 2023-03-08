@@ -44,7 +44,7 @@
 .point_area .point_list{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .point_area .point_list li{width:calc(50% - 6px);padding:10px 16px 24px;background:#fff;text-align:center;border:1px solid #537DEA;border-radius:1px 0 0 0;}
 .point_area .point_list li:nth-child(n+3){margin-top:12px;}
-.point_area .point_list li .num_point{}
+.point_area .point_list li .num_point{display:inline-block;width:126px;}
 .point_area .point_list li > p{margin:15px 0 20px;font-weight:800;font-size:36px;line-height:43px;text-align:center;letter-spacing:-0.02em;color:#222;}
 .point_area .point_list li .data_box{position:relative;padding-top:56%;width:100%;height:0;}
 .point_area .point_list li .data_box > iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
@@ -107,7 +107,7 @@
 	.point_area .sub_tit{max-width:330px;margin:0 auto 30px}
 	.point_area .point_list li{width:100%;padding:22px 8px 8px;margin-bottom:12px;}
 	.point_area .point_list li:nth-child(n+3){margin-top:0}
-	.point_area .point_list li .num_point{display:inline-block;width:110px}
+	.point_area .point_list li .num_point{width:110px}
 	.point_area .point_list li > p{margin:10px 0 20px;font-size:26px;line-height:32px;}
 	.btn_box{/*width:calc(100% - 58px);*/width:100%;flex-direction:column;margin:40px auto 0;}
 	.btn_box a{width:100%;height:66px;line-height:66px;font-size:24px;}
