@@ -1,37 +1,31 @@
 @charset "UTF-8";
 
-/*@font-face {
- font-family: 'yg-jalnan';
- src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
- font-weight: normal;
- font-style: normal;
-}*/
-
 .event_wrap{font-family:'Pretendard';font-weight:400;letter-spacing:-0.04em;}
+.event_wrap .mo_view{display:none}
 .event_wrap img{max-width:100%}
 .event_wrap section{padding:100px 0}
 .event_wrap section .inner{max-width:1024px;margin:0 auto}
 .event_wrap section .sub_tit{text-align:center}
-
-.visual_area{padding:65px 0 100px !important;text-align:center;background:#5F9B4D url('../../html/img/wordkingdom_event/bg_visual.png') no-repeat 50% 0}
-.visual_area .txt1{width:417px;margin:0 auto}
-.visual_area .txt2{position:relative;display:inline-block;margin:40px 0 35px;padding:12px 28px;font-size:32px;line-height:38px;text-align:center;color:#fff;border-radius:32px;background:linear-gradient(180deg, rgba(15, 175, 156, 0.3) 0%, rgba(44, 220, 199, 0.3) 100%), #318418;}
-.visual_area .txt2:after{content:'';position:absolute;bottom:-8px;left:50%;margin-left:-5px;border-left:10px solid transparent;border-top:10px solid #2e9c4b;border-right:10px solid transparent;border-bottom:0px solid transparent;}
-.visual_area .txt3{margin:30px 0 120px;font-size:26px;line-height:31px;text-align:center;color:#3F6C31;}
-.visual_area dl.period{display:flex;justify-content:center;align-items:center;margin:20px 0 20px;}
+.visual_area{padding:65px 0 140px !important;text-align:center;background:#d0fafa url('../../html/img/wordkingdom_event/bg_visual.png') no-repeat 50% 0}
+.visual_area .top_visual{max-width:756px;margin:0 auto;}
+.visual_area dl.period{display:flex;justify-content:center;align-items:center;margin-top:12px;}
 .visual_area dl.period dt{padding:4px 13px;margin-right:12px;font-weight:700;font-size:22px;line-height:26px;text-align:center;color:#fff;background:#5BBC3D;border-radius:17px;}
-.visual_area dl.period dd{font-weight:300;font-size:24px;line-height:29px;letter-spacing: -0.02em;color:#fff;}
-
-.review_area{background:#FCE56E url('../../html/img/wordkingdom_event/bg_review.png') no-repeat 50% 0}
-.review_area .sub_tit{margin-bottom:55px}
+.visual_area dl.period dd{font-weight:300;font-size:24px;line-height:29px;letter-spacing: -0.02em;color:#333;}
+.visual_area .txt_benefit{max-width:189px;margin:20px auto 0;}
+.info_area{margin-top:-15px;padding:75px 0 70px !important;background:url('../../html/img/wordkingdom_event/bg_info.png') no-repeat 50% 0}
+.info_area .btn_box{margin-top:50px}
+.review_area{padding:90px 0 !important;background:#FCE56E url('../../html/img/wordkingdom_event/bg_review.png') no-repeat 50% 0}
+.review_area .sub_tit{margin-bottom:50px}
 .review_area .review_slide{overflow:hidden;position:relative;}
 .review_area .review_slide .swiper-wrapper{padding:0 40px;}
-.review_area .review_slide .swiper-slide{width:346px;height:472px;margin-right:12px;padding:24px;border-radius:30px;background:#fff;}
+.review_area .review_slide .swiper-slide{width:346px;height:550px;margin-right:7px;padding:24px;border-radius:30px;background:#fff;}
+.review_area .review_slide .img_box{overflow:hidden;max-height:202px;border-radius:10px;}
 .review_area .review_slide .txt_review{overflow:hidden;max-height:172px;font-weight:300;font-size:17px;line-height:1.29;text-align:justify;letter-spacing: -0.02em;color:#000;}
-.review_area .review_slide .txt_review em{font-weight:700;text-decoration:underline}
-.review_area .review_slide .txt_box{padding-top:20px;margin-top:auto}
-.review_area .review_slide .txt_box .name{position:absolute;left:24px;bottom:24px;font-size:16px;line-height:1.38;color:#999;}
-.review_area .review_slide .txt_box .grade{display:inline-block;width:131px;height:22px;text-indent:-9999px;vertical-align:text-bottom;background:url('../../html/img/wordkingdom_event/ico_review.png') no-repeat 0 50% / 100% auto;}
+.review_area .review_slide .txt_review em{font-weight:700;text-decoration:underline;background:rgba(255, 47, 1, .05)}
+.review_area .review_slide .txt_box{padding-top:15px;margin-top:auto}
+.review_area .review_slide .txt_box .tit{margin-bottom:12px;font-size:30px;line-height:1.2;font-family:'yg-jalnan';color:#000;letter-spacing:-.02em;}
+.review_area .review_slide .txt_box .info{position:absolute;left:24px;bottom:24px;font-size:16px;line-height:1.38;color:#999;}
+.review_area .review_slide .txt_box .grade{display:inline-block;width:131px;height:22px;margin-left:10px;text-indent:-9999px;vertical-align:text-bottom;background:url('../../html/img/wordkingdom_event/ico_review.png') no-repeat 0 50% / 100% auto;}
 .review_area .review_slide .swiper-button-next:after,
 .review_area .review_slide .swiper-button-prev:after{display:none}
 .review_area .review_slide .swiper-button-prev,
@@ -40,18 +34,16 @@
 .review_area .review_slide .swiper-button-next{right:50%;margin-right:-512px;background:url('../../html/img/wordkingdom_event/btn_next.png') no-repeat 50% 50% / 100% auto}
 .review_area .review_slide:hover .swiper-button-prev,
 .review_area .review_slide:hover .swiper-button-next{display:inline-block;}
-
 .point_area{background:#1648C7 url('../../html/img/wordkingdom_event/bg_point.png') no-repeat 50% 0}
 .point_area .sub_tit{margin-bottom:45px}
 .point_area .point_list{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .point_area .point_list li{width:calc(50% - 6px);padding:10px 16px 24px;background:#fff;text-align:center;border:1px solid #537DEA;border-radius:1px 0 0 0;}
 .point_area .point_list li:nth-child(n+3){margin-top:12px;}
-.point_area .point_list li .num_point{margin-bottom:15px}
+.point_area .point_list li .num_point{}
 .point_area .point_list li > p{margin:15px 0 20px;font-weight:800;font-size:36px;line-height:43px;text-align:center;letter-spacing:-0.02em;color:#222;}
 .point_area .point_list li .data_box{position:relative;padding-top:56%;width:100%;height:0;}
 .point_area .point_list li .data_box > iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
 .point_area .point_list li .data_box img{position:absolute;top:0;left:0;width:100%;height:100%;}
-
 .btn_box{display:flex;justify-content:space-between;align-items:center;margin-top:40px;}
 .btn_box a{position:relative;width:calc(50% - 6px);height:76px;font-weight:800;color:#fff;font-size:30px;line-height:76px;text-align:center;border-radius:20px;box-shadow:0 4px 0 #CC5500;}
 .btn_box a:after{content:'';position:absolute;left:15px;top:2px;display:block;opacity:0.2;width:calc(100% - 30px);height:5px;background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);border-radius:100px;}
@@ -60,37 +52,59 @@
 .btn_box .btn_exp{background:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 56.29%), #FF6B01;}
 .btn_box .btn_buy{background:linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 56.29%), #FF2F01;}
 
-
 @media screen and (max-width: 1280px){
 }
 @media screen and (max-width: 1024px){
 	/*tab*/
 	.event_wrap section .inner{padding:0 30px}
-	.visual_area .txt3{font-size:24px}
-	.review_area .review_slide .swiper-wrapper{padding:0 50px;}
-	.review_area .review_slide .swiper-button-prev{left:20px;margin-left:0;}
-	.review_area .review_slide .swiper-button-next{right:20px;margin-right:0;}
-	.btn_box a{font-size:28px}
+	.review_area{padding:90px 0 !important;background:#FCE56E url('../../html/img/wordkingdom_event/bg_review_tab.png') no-repeat 50% 0 / 100% auto}
+	.review_area .review_slide .swiper-wrapper{padding:0 65px;}
+	.review_area .review_slide .swiper-button-prev{display:inline-block;left:35px;margin-left:0;}
+	.review_area .review_slide .swiper-button-next{display:inline-block;right:35px;margin-right:0;}
+	.btn_box a{font-size:27px}
 
 }
 @media screen and (max-width: 1080px){
 }
 @media screen and (max-width: 640px){
 	/*mo*/
-	.visual_area .txt3{font-size:14px}{
-
-	.review_area .review_slide{padding:0 50px}
-	.review_area .review_slide .swiper-wrapper{padding:0}
-	.review_area .review_slide .swiper-slide{margin-right:0}
-	.review_area .review_slide .swiper-button-prev{display:inline-block;left:25px;}
-	.review_area .review_slide .swiper-button-next{display:inline-block;right:25px}
-
-	.event_wrap .point_area{padding:40px 10px}
-	.point_area .point_list li{width:100%;margin-bottom:12px;}
-	.point_area .point_list li > p{font-size:28px}
-
-	.btn_box{width:calc(100% - 58px);flex-direction:column;margin:40px auto 0;}
-	.btn_box a{width:100%;height:70px;font-size:22px;}
-	.btn_box a.btn_exp{margin-bottom:8px}
+	.event_wrap .mo_view{display:block}
+	.event_wrap section .inner{padding:0 10px}
+	.visual_area{
+	padding:35px 0 18px !important;
+	background-color:#d0fafa;
+	/*background-image: url(../../html/img/wordkingdom_event/bg_visual_cha.png), url(../../html/img/wordkingdom_event/bg_visual_mo.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 33% 130%, 50% 50%;
+    background-size: 130% auto, 100% auto;*/
+	background:url('../../html/img/wordkingdom_event/bg_visual_mo.png') no-repeat 50% 0 / 100% auto;
+	}
+	.visual_area .top_visual{max-width:340px;}
+	.visual_area dl.period{margin-top:40px}
+	.visual_area dl.period dt{padding:0 10px;margin-right:6px;font-size:16px}
+	.visual_area dl.period dd{font-size:16px}
+	.info_area{margin:0;background:#F2E4BA url('../../html/img/wordkingdom_event/bg_info_mo.png') no-repeat 50% 0 / 100% auto;}
+	.info_area .pc_view{display:none}
+	.info_area .mo_view li + li{margin-top:30px;}
+	.review_area{padding:60px 0 !important;background:#FCE56E url('../../html/img/wordkingdom_event/bg_review_mo.png') no-repeat 50% 50% / 100% auto}
+	.review_area .sub_tit{width:320px;margin:0 auto 30px;}
+	.review_area .review_slide{padding:0 40px}
+	.review_area .review_slide .swiper-wrapper{padding:0;}
+	.review_area .review_slide .swiper-slide{height:428px;margin-right:0}
+	.review_area .review_slide .swiper-button-prev{left:10px;}
+	.review_area .review_slide .swiper-button-next{right:10px}
+	.review_area .review_slide .img_box{max-height:144px}
+	.review_area .review_slide .txt_box .tit{font-size:20px;}
+	.review_area .review_slide .txt_review{max-height:160px;font-size:14px}
+	.review_area .review_slide .txt_box .info{font-size:14px}
+	.review_area .review_slide .txt_box .grade{width:110px;height:18px;margin-left:6px;}
+	.event_wrap .point_area{padding:40px 0}
+	.point_area .point_list li{width:100%;padding:22px 8px 8px;margin-bottom:12px;}
+	.point_area .point_list li:nth-child(n+3){margin-top:0}
+	.point_area .point_list li .num_point{display:inline-block;width:110px}
+	.point_area .point_list li > p{margin:10px 0 20px;font-size:26px;line-height:32px;}
+	.btn_box{/*width:calc(100% - 58px);*/width:100%;flex-direction:column;margin:40px auto 0;}
+	.btn_box a{width:100%;height:66px;line-height:66px;font-size:24px;}
+	.btn_box a.btn_exp{margin-bottom:20px}
 }
 @media screen and (max-width: 480px){}
