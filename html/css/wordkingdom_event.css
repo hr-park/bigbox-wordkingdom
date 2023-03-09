@@ -21,7 +21,7 @@
 .review_area{padding:90px 0 !important;background:#FCE56E url('../../html/img/wordkingdom_event/bg_review.png') no-repeat 50% 0}
 .review_area .sub_tit{margin-bottom:50px}
 .review_area .review_slide{overflow:hidden;position:relative;}
-.review_area .review_slide .swiper-wrapper{padding:0 40px;}
+/*.review_area .review_slide .swiper-wrapper{padding:0 40px;}*/
 .review_area .review_slide .swiper-slide{width:346px;height:550px;margin-right:7px;padding:24px;border-radius:30px;background:#fff;}
 .review_area .review_slide .img_box{overflow:hidden;max-height:202px;border-radius:10px;}
 .review_area .review_slide .txt_review{overflow:hidden;max-height:172px;font-weight:300;font-size:17px;line-height:1.29;text-align:justify;letter-spacing: -0.02em;color:#000;}
@@ -62,7 +62,7 @@
 	/*tab*/
 	.event_wrap section .inner{padding:0 30px}
 	.review_area{padding:90px 0 !important;background:#FCE56E url('../../html/img/wordkingdom_event/bg_review_tab.png') no-repeat 50% 0 / 100% auto}
-	.review_area .review_slide .swiper-wrapper{padding:0 65px;}
+	/*.review_area .review_slide .swiper-wrapper{padding:0 65px;}*/
 	.review_area .review_slide .swiper-button-prev{display:inline-block;left:35px;margin-left:0;}
 	.review_area .review_slide .swiper-button-next{display:inline-block;right:35px;margin-right:0;}
 	.btn_box a{font-size:27px}
@@ -92,7 +92,7 @@
 	.review_area{padding:60px 0 !important;background:#FCE56E url('../../html/img/wordkingdom_event/bg_review_mo.png') no-repeat 50% 50% / 100% auto}
 	.review_area .sub_tit{max-width:320px;margin:0 auto 30px;}
 	.review_area .review_slide{padding:0 40px}
-	.review_area .review_slide .swiper-wrapper{padding:0;}
+	/*.review_area .review_slide .swiper-wrapper{padding:0;}*/
 	.review_area .review_slide .swiper-slide{height:428px;margin-right:0}
 	.review_area .review_slide .swiper-button-prev{left:10px;}
 	.review_area .review_slide .swiper-button-next{right:10px}
